@@ -1,0 +1,21 @@
+# Site settings
+title:        "Pete McWilliams"
+description:  ""
+url:          "http://petemcw.com"
+baseurl:      ""
+linkedin:     "http://www.linkedin.com/in/petemcw/"
+twitter:      "petemcw"
+github:       "petemcw"
+analytics:    "UA-17039579-1"
+
+# Build settings
+encoding:     "utf-8"
+timezone:     "America/Chicago"
+source:       "./_source"
+destination:  "./_site"
+plugins:      "./_plugins"
+markdown:     "kramdown"
+highlighter:  "pygments"
+assets:
+  js_compressor:  "yui"
+  css_compressor: "yui"
