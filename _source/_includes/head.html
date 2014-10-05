@@ -1,11 +1,34 @@
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta name="description" content="{{ site.description }}"/>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}"/>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     {% stylesheet main %}
+
+    <!--
+    OpenGraph:
+    https://dev.twitter.com/docs/cards;
+    https://developers.facebook.com/docs/reference/opengraph
+    -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@{{ site.twitter_username }}" />
+    <meta property="twitter:creator" content="@{{ site.twitter_username }}"/>
+    <meta property="twitter:title" content="{{ page.title }}" />
+    <meta property="twitter:description" content="{{ page.description }}" />
+    <meta property="twitter:url" content="{{ site.url }}" />
+    <meta property="twitter:image:src" content="{{ "/cover.jpg" | prepend: site.asseturl }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:description" content="{{ page.description }}"/>
+    <meta property="og:url" content="{{ site.url }}"/>
+    <meta property="og:image" content="{{ "/cover.jpg" | prepend: site.asseturl }}"/>
+
+    {% javascript modernizr %}
 </head>

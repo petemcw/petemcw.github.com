@@ -2,5 +2,11 @@
 layout: default
 ---
 
-<h1>Hello World</h1>
-<span class="label">Label</span>
+<header role="banner">
+  <div id="videoWrap">
+    <video id="introVideo" autoplay muted loop preload="auto" poster="{{ "/intro-poster.jpg" | prepend: site.asseturl }}">
+      <source src="{{ "/intro-video.webm" | prepend: site.asseturl }}" type="video/webm" />
+      <source src="{{ "/intro-video.mp4" | prepend: site.asseturl }}" type="video/mp4" />
+    </video>
+  </div>
+</header>
