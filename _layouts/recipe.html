@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<article class="post-container post-container--single" itemscope itemtype="http://schema.org/Recipe">
+    <header class="post-header">
+        <div class="post-meta">
+            <time datetime="{{ page.date | date: "%Y-%m-%d %H:%M" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time>
+            {% if page.tags.size > 0 %}
+            &#8226; <span class="post-meta__tags">on {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+            {% endif %}
+        </div>
+        <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+
+    <section class="post">
+        <!-- call up the image and image credit link -->
+        {% for image in page.recipe.image %}
+        <div class="featured-image">
+            <img itemprop="photo" src="{{site.baseurl}}/images/recipes/{{ image }}" />
+            {% if page.recipe.imagecredit %}
+            {% for imagecredit in page.recipe.imagecredit %}
+            <a href="{{ imagecredit }}">
+                <svg class="js-geomicon geomicon" width="14" height="14" data-icon="camera" viewBox="0 0 32 32" style="fill:currentcolor">
+                    <title>camera icon</title>
+                    <path d="M0 6 L8 6 L10 2 L22 2 L24 6 L32 6 L32 28 L0 28 z M9 17 A7 7 0 0 0 23 17 A7 7 0 0 0 9 17"></path>
+                </svg>
+            </a>
+            {% endfor %}
+            {% endif %}
+        </div>
+        {% endfor %}
+
+        {{ content }}
+
+        <ul id="recipe" class="recipe-overview">
+            <li title="Servings">{% include recipe-icons.html icon="quantity" %}
+                <span>{{ page.recipe.servings }}</span>
+            </li>
+            <li title="Prep Time">{% include recipe-icons.html icon="time" %}
+                <span>{{ page.recipe.prep }}</span>
+            </li>
+            <li title="Cook Time">{% include recipe-icons.html icon="cook" %}
+                <span>{{ page.recipe.cook }}</span>
+            </li>
+        </ul>
+
+        <div class="recipe-contents">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                {{ page.recipe.ingredients | markdownify }}
+            </div>
+
+            <div class="directions">
+                <h2>Directions</h2>
+                {{ page.recipe.directions | markdownify }}
+            </div>
+        </div>
+    </section>
+</article>
