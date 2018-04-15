@@ -1,0 +1,17 @@
+---
+layout: null
+sitemap:
+    exclude: 'yes'
+---
+/* humanstxt.org */
+
+/* TEAM */
+  Developer: Pete McWilliams
+  Twitter: petemcw
+  Github: petemcw
+  Location: Minneapolis, MN, USA
+
+/* SITE */
+  Last update: {{ site.time | date: "%Y/%m/%d" }}
+  Standards: HTML5, CSS3
+  Components: Jekyll

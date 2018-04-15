@@ -1,5 +1,4 @@
-petemcw.github.io
-==================
+# petemcw.github.io
 
 It's my website.
 
@@ -7,13 +6,19 @@ It's my website.
 
 ```bash
 git clone git@github.com:petemcw/petemcw.github.com.git
+cd petemcw.github.com/
 bundle install
-jekyll serve --watch
+bundle exec jekyll serve --watch
 ```
 
 ## Publish a new version
 
-```
+```bash
 rake publish
 ```
 
+---
+
+### Copyright and license
+
+Theme by [Josh Gerdes](https://github.com/joshgerdes/). It is under [the MIT license](/LICENSE).

@@ -1,6 +1,11 @@
-source 'https://rubygems.org'
-ruby '2.0.0'
+source "https://rubygems.org"
 
-gem 'jekyll', '~> 2.3'
-gem 'jekyll-assets', '~> 0.9'
-gem 'yui-compressor', '~> 0.12'
+gem "jekyll", "~> 3.7"
+gem "sprockets", "~> 4.0.beta", {
+  require: false
+}
+
+group :jekyll_plugins do
+  gem "jekyll-paginate-v2"
+  gem "github-pages"
+end
