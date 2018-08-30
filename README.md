@@ -2,7 +2,7 @@
 
 It's my website.
 
-## Running locally
+## Run it locally
 
 ```bash
 git clone git@github.com:petemcw/petemcw.github.com.git
@@ -15,6 +15,15 @@ bundle exec jekyll serve --watch
 
 ```bash
 rake publish
+```
+
+## Upgrade Jekyll
+
+The current version of Jekyll can be found on [RubyGems](https://rubygems.org/gems/jekyll).
+
+```bash
+bundle exec jekyll --version
+bundle update jekyll
 ```
 
 ---
