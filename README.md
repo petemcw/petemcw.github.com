@@ -14,7 +14,7 @@ bundle exec jekyll serve --watch
 ## Publish a new version
 
 ```bash
-rake publish
+bundle exec rake publish
 ```
 
 ## Upgrade Jekyll

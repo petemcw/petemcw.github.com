@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 3.7"
+gem "rake"
 gem "sprockets", "~> 4.0.beta", {
   require: false
 }

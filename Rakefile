@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'rake'
-require 'rdoc'
-require 'date'
+# require 'date'
 require 'yaml'
 require 'tmpdir'
 require 'jekyll'
