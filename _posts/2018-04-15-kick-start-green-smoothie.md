@@ -19,8 +19,8 @@ recipe:
     * 1 handful organic raw kale or spinach
     * 1 whole organic cucumber (with skin on)
     * 1 tsp clean greens powder
-    * iced water (enough to loosen everything up)
     * 1 thumb fresh ginger; peeled and chopped (to taste)
+    * iced water (enough to loosen everything up)
 
   directions: |-
     1. Pop all the ingredients into the Vitamix
