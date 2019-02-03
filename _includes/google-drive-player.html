@@ -1,0 +1,7 @@
+<div class="embed-container">
+    <h3>{{ include.title }}</h3>
+    <hr />
+    <video id='{{ include.id }}' class='video-js' autoplay loop preload='auto' width='690' height='690' data-setup='{}'>
+        <source src='https://drive.google.com/uc?export=download&id={{ include.id }}' type='video/mp4'>
+    </video>
+</div>
