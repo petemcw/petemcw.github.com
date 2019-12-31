@@ -1,56 +1,167 @@
----
-layout: null
-sitemap:
-    exclude: 'yes'
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for post in site.posts %}
-    {% unless post.published == false %}
+
+    
     <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
-        {% if post.sitemap.lastmod %}
-            <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-        {% elsif post.date %}
-            <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        {% endif %}
-        {% if post.sitemap.changefreq %}
-            <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% else %}
+        <loc>http://petemcw.com/2019/franks-buffalo-chicken-dip/</loc>
+        
+            <lastmod>2019-12-31T04:48:10-06:00</lastmod>
+        
+        
             <changefreq>monthly</changefreq>
-        {% endif %}
-        {% if post.sitemap.priority %}
-            <priority>{{ post.sitemap.priority }}</priority>
-        {% else %}
+        
+        
             <priority>0.5</priority>
-        {% endif %}
+        
     </url>
-    {% endunless %}
-{% endfor %}
-{% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" or page.robots contains "noindex" %}
+    
+
+    
     <url>
-        <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
-        {% if page.sitemap.lastmod %}
-            <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-        {% elsif page.date %}
-            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        {% endif %}
-        {% if page.sitemap.changefreq %}
-            <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-        {% else %}
+        <loc>http://petemcw.com/2019/men-in-black-workout/</loc>
+        
+            <lastmod>2019-02-03T07:14:43-06:00</lastmod>
+        
+        
             <changefreq>monthly</changefreq>
-        {% endif %}
-        {% if page.sitemap.priority %}
-            <priority>{{ page.sitemap.priority }}</priority>
-        {% else %}
-            <priority>0.3</priority>
-        {% endif %}
+        
+        
+            <priority>0.5</priority>
+        
     </url>
-    {% endunless %}
-{% endfor %}
+    
+
+    
+    <url>
+        <loc>http://petemcw.com/2019/slow-cooker-carne-asada/</loc>
+        
+            <lastmod>2019-01-19T04:50:03-06:00</lastmod>
+        
+        
+            <changefreq>monthly</changefreq>
+        
+        
+            <priority>0.5</priority>
+        
+    </url>
+    
+
+    
+    <url>
+        <loc>http://petemcw.com/2018/kick-start-green-smoothie/</loc>
+        
+            <lastmod>2018-04-15T17:01:33-05:00</lastmod>
+        
+        
+            <changefreq>monthly</changefreq>
+        
+        
+            <priority>0.5</priority>
+        
+    </url>
+    
+
+    
+    <url>
+        <loc>http://petemcw.com/2018/instapot-sloppy-joes/</loc>
+        
+            <lastmod>2018-04-14T13:04:23-05:00</lastmod>
+        
+        
+            <changefreq>monthly</changefreq>
+        
+        
+            <priority>0.5</priority>
+        
+    </url>
+    
+
+    
+    <url>
+        <loc>http://petemcw.com/2017/homemade-hot-chocolate/</loc>
+        
+            <lastmod>2017-12-20T14:13:41-06:00</lastmod>
+        
+        
+            <changefreq>monthly</changefreq>
+        
+        
+            <priority>0.5</priority>
+        
+    </url>
+    
+
+    
+    <url>
+        <loc>http://petemcw.com/2017/fresh-ginger-tea/</loc>
+        
+            <lastmod>2017-12-18T04:07:19-06:00</lastmod>
+        
+        
+            <changefreq>monthly</changefreq>
+        
+        
+            <priority>0.5</priority>
+        
+    </url>
+    
+
+
+    
+
+    
+    <url>
+        <loc>http://petemcw.com/crossdomain.xml</loc>
+        
+            <lastmod>2019-12-31T11:27:00-06:00</lastmod>
+        
+        
+            <changefreq>monthly</changefreq>
+        
+        
+            <priority>0.3</priority>
+        
+    </url>
+    
+
+    
+    <url>
+        <loc>http://petemcw.com/feed.xml</loc>
+        
+            <lastmod>2019-12-31T11:27:00-06:00</lastmod>
+        
+        
+            <changefreq>monthly</changefreq>
+        
+        
+            <priority>0.3</priority>
+        
+    </url>
+    
+
+    
+
+    
+
+    
+    <url>
+        <loc>http://petemcw.com/css/main.css</loc>
+        
+            <lastmod>2019-12-31T11:27:00-06:00</lastmod>
+        
+        
+            <changefreq>monthly</changefreq>
+        
+        
+            <priority>0.3</priority>
+        
+    </url>
+    
+
+    
+
+    
+
+    
+
 </urlset>

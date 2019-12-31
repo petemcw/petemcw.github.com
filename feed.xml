@@ -1,30 +1,289 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>{{ site.title | xml_escape }}</title>
-        <description>{{ site.description | xml_escape }}</description>
-        <link>{{ site.url }}{{ site.baseurl }}/</link>
-        <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
-        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        <generator>Jekyll v{{ jekyll.version }}</generator>
-        {% for post in site.posts limit:10 %}
+        <title>Pete McWilliams</title>
+        <description>Christ Follower, Family Man, Outdoors Enthusiast, Technologist</description>
+        <link>http://petemcw.com/</link>
+        <atom:link href="http://petemcw.com/feed.xml" rel="self" type="application/rss+xml" />
+        <pubDate>Tue, 31 Dec 2019 11:27:00 -0600</pubDate>
+        <lastBuildDate>Tue, 31 Dec 2019 11:27:00 -0600</lastBuildDate>
+        <generator>Jekyll v3.8.5</generator>
+        
             <item>
-                <title>{{ post.title | xml_escape }}</title>
-                <description>{{ post.content | xml_escape }}</description>
-                <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-                <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-                <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-                {% for tag in post.tags %}
-                <category>{{ tag | xml_escape }}</category>
-                {% endfor %}
-                {% for cat in post.categories %}
-                <category>{{ cat | xml_escape }}</category>
-                {% endfor %}
+                <title>Frank's RedHot Buffalo Chicken Dip</title>
+                <description>&lt;p&gt;This tasty creamy dip tastes like Buffalo chicken wings but without the mess! Serve hot with celery sticks, veggies or your favorite chips.&lt;/p&gt;
+</description>
+                <pubDate>Tue, 31 Dec 2019 04:48:10 -0600</pubDate>
+                <link>http://petemcw.com/2019/franks-buffalo-chicken-dip/</link>
+                <guid isPermaLink="true">http://petemcw.com/2019/franks-buffalo-chicken-dip/</guid>
+                
+                <category>recipes</category>
+                
+                <category>snacks</category>
+                
+                <category>appetizers</category>
+                
+                <category>chicken</category>
+                
+                
+                <category>recipes</category>
+                
             </item>
-        {% endfor %}
+        
+            <item>
+                <title>Men In Black Workout</title>
+                <description>&lt;p&gt;I saw this workout posted on &lt;a href=&quot;https://www.menshealth.com/fitness/a25298524/chris-hemsworth-mib-workout/&quot;&gt;Men’s Health&lt;/a&gt; a while back and I’m republishing it here for my own quick access.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-warmup&quot;&gt;The Warmup&lt;/h2&gt;
+
+&lt;p&gt;Perform 10 tabata rounds (20 seconds on, 10 seconds off) of both exercises. Start slow and get faster as you progress through the rounds.&lt;/p&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Bear Crawls&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1RUjTRVJ-E4oKf_nzJSLyy1bNJuE2ZDA_&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1RUjTRVJ-E4oKf_nzJSLyy1bNJuE2ZDA_&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Bodyweight Squats&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1xzxvk7ZP5eFDWDgtANLASFlIZQ8rBfEJ&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1xzxvk7ZP5eFDWDgtANLASFlIZQ8rBfEJ&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-workout&quot;&gt;The Workout&lt;/h2&gt;
+
+&lt;p&gt;Perform &lt;strong&gt;8 reps&lt;/strong&gt; of each exercise consecutively as a circuit. Don’t rest between moves, and rest as little as possible between sets. Repeat the circuit &lt;strong&gt;3 times&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;strength-circuit&quot;&gt;Strength Circuit&lt;/h2&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Dumbbell Weighted Burpee&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1ZWZgsEi5NREAmH2yNjC1yx4REUst5IpL&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1ZWZgsEi5NREAmH2yNjC1yx4REUst5IpL&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Curl and Press&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1vnKsRilZXQV2sP1YvFikZ9MVfy2T7nPX&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1vnKsRilZXQV2sP1YvFikZ9MVfy2T7nPX&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Goblet Squat&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1-n7SPzJEmkgapJkFpGDtNE2E4Iza5iFn&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1-n7SPzJEmkgapJkFpGDtNE2E4Iza5iFn&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Standing Triceps Extension&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1RiyEUrdfFOB_D640SSfYPKVKa_j0KPio&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1RiyEUrdfFOB_D640SSfYPKVKa_j0KPio&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Reverse Lunge and Curl&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1DeZu3w2nWDkLIGWA19tC0o4YsGBZxpXg&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1DeZu3w2nWDkLIGWA19tC0o4YsGBZxpXg&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;shoulder-circuit&quot;&gt;Shoulder Circuit&lt;/h2&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Lateral Raise&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1sX9c9J4N5RmGhgH31ntrmIThqbY2PEIs&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1sX9c9J4N5RmGhgH31ntrmIThqbY2PEIs&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Front Raise&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1zYDc7r7RVnKtuvCQXTBUl5M1BBxbTJoE&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1zYDc7r7RVnKtuvCQXTBUl5M1BBxbTJoE&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Upright Row&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1b7y6oOpp0jgCGG-5BpQLVucBIgv9LrOE&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1b7y6oOpp0jgCGG-5BpQLVucBIgv9LrOE&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;plank-circuit&quot;&gt;Plank Circuit&lt;/h2&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Plank Punch Out&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1y9Bd93kIYQhMFCzq6rQDpsW1y3xaC6z3&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1y9Bd93kIYQhMFCzq6rQDpsW1y3xaC6z3&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Plank Pulse&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1B6zeumeNYXEjRyYoArezX-kqKdUemhFK&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1B6zeumeNYXEjRyYoArezX-kqKdUemhFK&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;embed-container&quot;&gt;
+    &lt;h3&gt;Plank Pike&lt;/h3&gt;
+    &lt;hr /&gt;
+    &lt;video id=&quot;1JOzJTgW7XV5HM576YbdAgSHVPwaPJvAK&quot; class=&quot;video-js&quot; autoplay=&quot;&quot; loop=&quot;&quot; preload=&quot;auto&quot; width=&quot;690&quot; height=&quot;690&quot; data-setup=&quot;{}&quot;&gt;
+        &lt;source src=&quot;https://drive.google.com/uc?export=download&amp;amp;id=1JOzJTgW7XV5HM576YbdAgSHVPwaPJvAK&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+
+</description>
+                <pubDate>Sun, 03 Feb 2019 07:14:43 -0600</pubDate>
+                <link>http://petemcw.com/2019/men-in-black-workout/</link>
+                <guid isPermaLink="true">http://petemcw.com/2019/men-in-black-workout/</guid>
+                
+                <category>workouts</category>
+                
+                <category>bodyweight</category>
+                
+                <category>dumbbell</category>
+                
+                <category>tabata</category>
+                
+                
+                <category>workouts</category>
+                
+            </item>
+        
+            <item>
+                <title>Slow Cooker Carne Asada</title>
+                <description>&lt;p&gt;A delicious Mexican recipe I grabbed from my sister-in-law. You can eat this with tortillas, ciabatta buns, top on a salad, or eat on its own. If in a hurry, &lt;a href=&quot;https://paleomg.com/instant-pot-carnitas/&quot;&gt;try preparing with the Instapot&lt;/a&gt;.&lt;/p&gt;
+</description>
+                <pubDate>Sat, 19 Jan 2019 04:50:03 -0600</pubDate>
+                <link>http://petemcw.com/2019/slow-cooker-carne-asada/</link>
+                <guid isPermaLink="true">http://petemcw.com/2019/slow-cooker-carne-asada/</guid>
+                
+                <category>recipes</category>
+                
+                <category>instapot</category>
+                
+                <category>lunch</category>
+                
+                <category>dinner</category>
+                
+                <category>beef</category>
+                
+                <category>pork</category>
+                
+                
+                <category>recipes</category>
+                
+            </item>
+        
+            <item>
+                <title>Bear Grylls Kick-start Smoothie</title>
+                <description>&lt;p&gt;I pulled this recipe out of Bear Grylls’ book &lt;a href=&quot;http://a.co/1kQSnmX&quot;&gt;Your Life - Train for It&lt;/a&gt;. It is a quite tasty smoothie, recommended as a breakfast replacement. It’s a great option to drink about an hour before your morning workout.&lt;/p&gt;
+</description>
+                <pubDate>Sun, 15 Apr 2018 17:01:33 -0500</pubDate>
+                <link>http://petemcw.com/2018/kick-start-green-smoothie/</link>
+                <guid isPermaLink="true">http://petemcw.com/2018/kick-start-green-smoothie/</guid>
+                
+                <category>recipes</category>
+                
+                <category>smoothie</category>
+                
+                <category>drinks</category>
+                
+                <category>vitamix</category>
+                
+                <category>breakfast</category>
+                
+                
+                <category>recipes</category>
+                
+            </item>
+        
+            <item>
+                <title>Instant Pot Sloppy Joes</title>
+                <description>&lt;p&gt;This recipe is a work in progress. We are working towards making a new family recipe and this is the latest version.&lt;/p&gt;
+</description>
+                <pubDate>Sat, 14 Apr 2018 13:04:23 -0500</pubDate>
+                <link>http://petemcw.com/2018/instapot-sloppy-joes/</link>
+                <guid isPermaLink="true">http://petemcw.com/2018/instapot-sloppy-joes/</guid>
+                
+                <category>recipes</category>
+                
+                <category>instapot</category>
+                
+                <category>instant pot</category>
+                
+                <category>lunch</category>
+                
+                <category>dinner</category>
+                
+                <category>beef</category>
+                
+                
+                <category>recipes</category>
+                
+            </item>
+        
+            <item>
+                <title>Homemade Vitamix Hot Cocoa</title>
+                <description>&lt;p&gt;Super easy &amp;amp; fast to make hot chocolate. The Vitamix kills it once again.&lt;/p&gt;
+</description>
+                <pubDate>Wed, 20 Dec 2017 14:13:41 -0600</pubDate>
+                <link>http://petemcw.com/2017/homemade-hot-chocolate/</link>
+                <guid isPermaLink="true">http://petemcw.com/2017/homemade-hot-chocolate/</guid>
+                
+                <category>recipes</category>
+                
+                <category>cocoa</category>
+                
+                <category>drinks</category>
+                
+                <category>vitamix</category>
+                
+                
+                <category>recipes</category>
+                
+            </item>
+        
+            <item>
+                <title>Fresh Ginger Vitamix Tea</title>
+                <description>&lt;p&gt;This spicy &amp;amp; sweet tea is good any time, but especially when you’re feeling under the weather. Fantastic warm or cold.&lt;/p&gt;
+</description>
+                <pubDate>Mon, 18 Dec 2017 04:07:19 -0600</pubDate>
+                <link>http://petemcw.com/2017/fresh-ginger-tea/</link>
+                <guid isPermaLink="true">http://petemcw.com/2017/fresh-ginger-tea/</guid>
+                
+                <category>recipes</category>
+                
+                <category>tea</category>
+                
+                <category>drinks</category>
+                
+                <category>vitamix</category>
+                
+                
+                <category>recipes</category>
+                
+            </item>
+        
     </channel>
 </rss>

@@ -1,8 +1,3 @@
----
-layout: null
-sitemap:
-    exclude: 'yes'
----
 /* humanstxt.org */
 
 /* TEAM */
@@ -12,6 +7,6 @@ sitemap:
   Location: Minneapolis, MN, USA
 
 /* SITE */
-  Last update: {{ site.time | date: "%Y/%m/%d" }}
+  Last update: 2019/12/31
   Standards: HTML5, CSS3
   Components: Jekyll
