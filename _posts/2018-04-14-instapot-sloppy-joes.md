@@ -1,10 +1,10 @@
 ---
 layout: recipe
-title: "Instapot Sloppy Joes"
-excerpt: "Quick, Easy, and Tasty Instapot Sloppy Joes"
+title: "Instant Pot Sloppy Joes"
+excerpt: "Quick, Easy, and Tasty Instant Pot Sloppy Joes"
 date: 2018-04-14 18:04:23
 categories: [recipes]
-tags: [recipes,instapot,lunch,dinner,beef]
+tags: [recipes,instapot,instant pot,lunch,dinner,beef]
 hidden: true
 
 recipe:
@@ -39,13 +39,13 @@ recipe:
     * 1 Tbsp corn starch
 
   directions: |-
-    1. Turn on the Instapot and set to `Sauté`.
+    1. Turn on the Instant Pot and set to `Sauté`.
     2. In a small bowl, mix the sauce ingredients and set to the side.
-    3. When hot, add the ground beef & garlic to the Instapot. Cook until the meat starts to brown.
-    4. If desired, turn off the Instapot and drain the fat.
+    3. When hot, add the ground beef & garlic to the Instant Pot. Cook until the meat starts to brown.
+    4. If desired, turn off the Instant Pot and drain the fat.
     5. Add pickles, onion, & celery to the meat. Sauté for 1-2 minutes.
-    6. Turn off `Sauté` mode, add sauce & beef broth to the Instapot.
-    7. Set Instapot to manual high pressure and cook for 7 minutes. Quick release the pressure when complete.
+    6. Turn off `Sauté` mode, add sauce & beef broth to the Instant Pot.
+    7. Set Instant Pot to manual high pressure and cook for 7 minutes. Quick release the pressure when complete.
     8. If needed, turn on `Sauté`, add water & corn starch and cook until thick.
 ---
 
