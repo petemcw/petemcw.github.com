@@ -1,0 +1,933 @@
+<title>Margaret Thompson Jensen</title>
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Libre+Caslon+Display&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+:root {
+  --paper: #EDEFEA;
+  --paper-2: #F7F8F5;
+  --mat: #FBFBF8;
+  --ink: #1C2326;
+  --ink-2: #4E595D;
+  --ink-3: #6F797C;
+  --rule: #C9CFC8;
+  --rule-2: #DDE2DC;
+  --accent: #2D4F6C;
+  --accent-soft: #D9E2EA;
+  --brass: #8C6D2C;
+  --ledger: rgba(45, 79, 108, .10);
+  --shadow: 0 1px 2px rgba(28, 35, 38, .08), 0 8px 24px -12px rgba(28, 35, 38, .25);
+  --serif-display: "Libre Caslon Display", "Libre Caslon Text", Georgia, "Times New Roman", serif;
+  --serif: "Literata", "Iowan Old Style", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --gutter: clamp(16px, 4vw, 40px);
+  --top: 0px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121618; --paper-2: #192023; --mat: #20272A;
+    --ink: #E5E8E3; --ink-2: #AEB7B9; --ink-3: #8A9497;
+    --rule: #354044; --rule-2: #273033;
+    --accent: #A3C1DC; --accent-soft: #22303B; --brass: #D3B874;
+    --ledger: rgba(163, 193, 220, .08);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px -12px rgba(0,0,0,.7);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #121618; --paper-2: #192023; --mat: #20272A;
+  --ink: #E5E8E3; --ink-2: #AEB7B9; --ink-3: #8A9497;
+  --rule: #354044; --rule-2: #273033;
+  --accent: #A3C1DC; --accent-soft: #22303B; --brass: #D3B874;
+  --ledger: rgba(163, 193, 220, .08);
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px -12px rgba(0,0,0,.7);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 1.0625rem/1.65 var(--serif);
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--accent); text-underline-offset: .18em; text-decoration-thickness: 1px; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.wrap { max-width: 1180px; margin-inline: auto; padding-inline: var(--gutter); }
+.mono { font-family: var(--mono); }
+.eyebrow {
+  font: 500 .72rem/1.3 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--brass);
+}
+h1, h2, h3 { font-weight: 400; text-wrap: balance; margin: 0; }
+h2 { font: 400 clamp(2.1rem, 4.6vw, 3.1rem)/1.05 var(--serif-display); letter-spacing: -.005em; }
+h3 { font: 600 1.05rem/1.35 var(--serif); }
+p { margin: 0; }
+.prose { display: grid; gap: 1.05em; max-width: 64ch; }
+.prose p { hyphens: auto; }
+.muted { color: var(--ink-2); }
+.num { font-variant-numeric: tabular-nums lining-nums; }
+
+/* ---------- top bar ---------- */
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  -webkit-backdrop-filter: saturate(1.2) blur(10px); backdrop-filter: saturate(1.2) blur(10px);
+  border-bottom: 1px solid var(--rule-2);
+}
+.topbar .wrap { display: flex; align-items: center; gap: 20px; min-height: 52px; }
+.topbar .mark { font: 400 1.15rem/1 var(--serif-display); white-space: nowrap; text-decoration: none; color: var(--ink); }
+.topbar nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; margin-left: auto; }
+.topbar nav::-webkit-scrollbar { display: none; }
+.topbar nav a {
+  font: 500 .74rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2);
+  text-decoration: none; padding: 10px 10px; border-radius: 4px; white-space: nowrap;
+}
+.topbar nav a:hover { color: var(--ink); background: var(--rule-2); }
+
+/* ---------- hero ---------- */
+.hero { padding-block: clamp(32px, 6vw, 72px) clamp(40px, 6vw, 80px); }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.hero-photo { margin: 0; justify-self: center; width: min(100%, 420px); }
+.mat { background: var(--mat); padding: clamp(12px, 2vw, 22px); box-shadow: var(--shadow); }
+.mat img { width: 100%; height: auto; background: var(--rule-2); }
+.hero-photo figcaption, figure.photo figcaption { font: 400 .78rem/1.45 var(--mono); color: var(--ink-3); margin-top: 12px; letter-spacing: .01em; }
+.hero h1 { font: 400 clamp(3.2rem, 9vw, 6.4rem)/.92 var(--serif-display); letter-spacing: -.015em; }
+.hero h1 span { display: block; font-size: .5em; line-height: 1.1; margin-top: .35em; color: var(--ink-2); letter-spacing: 0; }
+.hero .dates { margin-top: 22px; font: 500 .9rem/1.5 var(--mono); color: var(--brass); letter-spacing: .04em; }
+.hero .lede { margin-top: 26px; font-size: 1.2rem; line-height: 1.6; max-width: 34em; }
+.facts { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 30px 0 0; padding: 18px 0 0; border-top: 1px solid var(--rule); list-style: none; }
+.facts li { display: grid; gap: 2px; }
+.facts b { font: 400 1.9rem/1 var(--serif-display); color: var(--ink); font-variant-numeric: lining-nums; }
+.facts span { font: 500 .68rem/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+
+/* ---------- story + year rail ---------- */
+.story .wrap { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(24px, 4vw, 64px); }
+.rail { position: relative; }
+.rail-inner { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 84px); height: calc(100vh - 130px); max-height: 640px; min-height: 360px; display: grid; grid-template-rows: auto 1fr; gap: 18px; }
+.rail-now { display: grid; gap: 2px; }
+.rail-year { font: 400 2.6rem/1 var(--serif-display); font-variant-numeric: lining-nums tabular-nums; }
+.rail-age { font: 500 .74rem/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--brass); }
+.rail-ch { font: 400 .95rem/1.3 var(--serif); font-style: italic; color: var(--ink-2); min-height: 2.6em; }
+.scale { position: relative; margin-left: 6px; }
+.scale::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--rule); }
+.tick { position: absolute; left: 0; width: 7px; height: 1px; background: var(--rule); }
+.tick b { position: absolute; left: 14px; top: -.6em; font: 400 .66rem/1 var(--mono); color: var(--ink-3); font-weight: 400; }
+.seg { position: absolute; left: -2px; width: 5px; border-radius: 3px; background: var(--rule); transition: background .25s; }
+.seg.on { background: var(--accent); }
+.seg a { position: absolute; inset: -2px -6px; }
+.marker { position: absolute; left: -5px; width: 11px; height: 11px; border-radius: 50%; background: var(--paper); border: 2px solid var(--accent); transform: translateY(-50%); transition: top .12s linear; }
+.minibar { display: none; }
+
+.chapters { min-width: 0; }
+.chapter { padding-block: clamp(48px, 7vw, 88px); border-top: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+.chapter > *, .two > *, .slips > * { min-width: 0; }
+.chapter:first-child { border-top: 0; padding-top: 8px; }
+.chapter header { display: grid; gap: 12px; }
+.chapter .kicker { font: 400 1.05rem/1.5 var(--serif); font-style: italic; color: var(--ink-2); max-width: 46ch; }
+.subhead { font: 500 .74rem/1.3 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); padding-top: 10px; border-top: 1px solid var(--rule-2); max-width: 64ch; }
+
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+figure { margin: 0; }
+figure.photo { max-width: 640px; }
+figure.photo.small { max-width: 300px; }
+figure.photo button { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+figure.pair { max-width: 900px; display: grid; gap: 12px; }
+.pair-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; align-items: end; }
+.pair-row .mat { padding: 10px; }
+.pair-cap { font: 400 1.02rem/1.4 var(--serif); font-style: italic; color: var(--ink-2); }
+@media (max-width: 560px) { .pair-row { grid-template-columns: minmax(0, 1fr); } }
+figure.historic { max-width: 760px; }
+figure.historic img { filter: grayscale(1) contrast(1.04); }
+figure.historic figcaption { display: grid; gap: 4px; }
+figure.historic .hc { font: 400 .95rem/1.5 var(--serif); color: var(--ink-2); letter-spacing: 0; max-width: 64ch; }
+figure.historic .cr { font: 400 .72rem/1.4 var(--mono); color: var(--ink-3); }
+.cutout { background: radial-gradient(120% 90% at 50% 60%, var(--accent-soft), transparent 70%); padding: 18px 18px 0; }
+.cutout img { background: transparent !important; }
+
+blockquote.letter { margin: 0; max-width: 40ch; padding-left: 22px; border-left: 2px solid var(--brass); }
+blockquote.letter p { font: 400 1.35rem/1.45 var(--serif-display); font-style: italic; }
+blockquote.letter footer { margin-top: 10px; font: 400 .78rem/1.4 var(--mono); color: var(--ink-3); }
+blockquote.words { margin: 0; max-width: 58ch; padding: 22px 24px; background: var(--paper-2); border-radius: 2px; }
+blockquote.words p { font-size: 1.1rem; font-style: italic; }
+blockquote.words footer { margin-top: 12px; font: 400 .78rem/1.4 var(--mono); color: var(--ink-3); }
+
+/* record slip: a ruled ledger card */
+.slip { border: 1px solid var(--rule); background: var(--paper-2); max-width: 760px; }
+.slip-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 10px 14px; border-bottom: 1px solid var(--rule); font: 500 .7rem/1.35 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+.slip-head .d { color: var(--brass); }
+.slip-img { display: block; width: 100%; padding: 0; border: 0; border-bottom: 1px solid var(--rule-2); background: var(--mat); cursor: zoom-in; overflow: hidden; }
+.slip-img img { width: 100%; height: auto; max-height: 340px; object-fit: cover; object-position: left center; filter: contrast(1.02); }
+.slip-img.wide img { height: clamp(84px, 15vw, 132px); max-height: none; object-fit: cover; object-position: left center; }
+.slip-img.tall img { max-height: 420px; object-fit: contain; object-position: center top; }
+.slip-lines { margin: 0; padding: 10px 14px 12px; overflow-x: auto; font: 400 .8rem/1.9 var(--mono); color: var(--ink);
+  background-image: repeating-linear-gradient(to bottom, transparent 0 calc(1.9em - 1px), var(--ledger) calc(1.9em - 1px) 1.9em);
+  background-position: 0 10px; white-space: pre; }
+.slip-lines:empty { display: none; }
+.slip-foot { padding: 8px 14px 10px; font: 400 .72rem/1.4 var(--mono); color: var(--ink-3); border-top: 1px solid var(--rule-2); }
+.slips { display: grid; gap: 22px; }
+.slips.pair { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); max-width: 760px; }
+
+.gap-note { max-width: 64ch; padding: 16px 18px; border: 1px dashed var(--rule); border-radius: 3px; font-size: .98rem; color: var(--ink-2); }
+.gap-note b { color: var(--ink); font-weight: 600; }
+
+/* directory ribbon */
+.dir { max-width: 760px; border: 1px solid var(--rule); background: var(--paper-2); }
+.dir-years { display: flex; overflow-x: auto; border-bottom: 1px solid var(--rule); scrollbar-width: thin; }
+.dir-years button { flex: 0 0 auto; border: 0; border-right: 1px solid var(--rule-2); background: none; padding: 10px 14px; font: 500 .78rem/1 var(--mono); color: var(--ink-2); cursor: pointer; font-variant-numeric: tabular-nums; }
+.dir-years button[aria-selected="true"] { background: var(--accent); color: var(--paper); }
+.dir-years button:hover:not([aria-selected="true"]) { background: var(--rule-2); color: var(--ink); }
+.dir-panel { display: grid; gap: 0; }
+.dir-panel .slip-img img { max-height: 220px; object-fit: contain; object-position: left center; }
+.dir-text { padding: 12px 14px 4px; font: 400 .9rem/1.6 var(--mono); overflow-wrap: anywhere; }
+.dir-gloss { padding: 0 14px 14px; font-size: .95rem; color: var(--ink-2); }
+
+/* ---------- family ---------- */
+.section { padding-block: clamp(56px, 8vw, 96px); border-top: 1px solid var(--rule); }
+.section > .wrap { display: grid; gap: 28px; }
+.section-head { display: grid; gap: 12px; max-width: 64ch; }
+.tree { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 340px); gap: 28px; align-items: start; }
+.gens { display: grid; gap: 0; }
+.gen { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 16px; padding-block: 14px; border-top: 1px solid var(--rule-2); align-items: start; }
+.gen:first-child { border-top: 0; }
+.gen-label { font: 500 .68rem/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); padding-top: 9px; }
+.people { display: flex; flex-wrap: wrap; gap: 8px; }
+.person { border: 1px solid var(--rule); background: var(--paper-2); border-radius: 3px; padding: 7px 11px 6px; text-align: left; cursor: pointer; display: grid; gap: 1px; min-width: 0; }
+.person b { font: 600 .92rem/1.25 var(--serif); }
+.person small { font: 400 .7rem/1.3 var(--mono); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.person:hover { border-color: var(--accent); }
+.person[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.person.her b { font: 400 1.05rem/1.2 var(--serif-display); }
+.person .and { color: var(--ink-3); font-weight: 400; }
+.person-card { position: sticky; top: 84px; border: 1px solid var(--rule); background: var(--paper-2); padding: 18px 20px 20px; display: grid; gap: 10px; }
+.person-card h3 { font: 400 1.5rem/1.15 var(--serif-display); }
+.person-card .yrs { font: 500 .78rem/1.3 var(--mono); color: var(--brass); }
+.person-card p { font-size: .98rem; }
+.person-card img { width: 120px; border: 6px solid var(--mat); box-shadow: var(--shadow); }
+
+/* ---------- map ---------- */
+.maps { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.mapbox { border: 1px solid var(--rule); background: var(--paper-2); padding: 12px; display: grid; gap: 8px; }
+.mapbox .cap { font: 500 .68rem/1.3 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.mapbox svg { width: 100%; height: auto; display: block; }
+.m-state { fill: var(--mat); stroke: var(--ink-3); stroke-width: 1.2; }
+.m-counties { fill: none; stroke: var(--rule); stroke-width: .6; }
+.m-lit { fill: var(--accent-soft); stroke: none; }
+.m-litlabel, .m-label { font: 500 9px var(--mono); letter-spacing: .08em; fill: var(--ink-3); }
+.m-box { fill: none; stroke: var(--brass); stroke-width: 1.2; stroke-dasharray: 3 2; }
+.pin { cursor: pointer; }
+.pin circle.dot { fill: var(--accent); stroke: var(--mat); stroke-width: 2; }
+.pin circle.halo { fill: var(--accent); opacity: 0; transition: opacity .2s; }
+.pin text { font: 400 12.5px var(--serif); fill: var(--ink); paint-order: stroke; stroke: var(--mat); stroke-width: 3px; stroke-linejoin: round; }
+.pin:hover circle.halo, .pin.on circle.halo { opacity: .22; }
+.pin:focus-visible { outline: none; }
+.pin:focus-visible circle.dot { stroke: var(--brass); stroke-width: 3; }
+.place-card { grid-column: 1 / -1; border-left: 2px solid var(--brass); padding: 4px 0 4px 18px; display: grid; gap: 4px; max-width: 64ch; min-height: 5.2em; }
+.place-card h3 { font: 400 1.4rem/1.2 var(--serif-display); }
+.place-card .yrs { font: 500 .74rem/1.3 var(--mono); color: var(--brass); letter-spacing: .06em; }
+
+/* ---------- letter ---------- */
+.letter-sec .wrap { max-width: 900px; }
+.letter-open { justify-self: start; border: 1px solid var(--accent); background: var(--accent); color: var(--paper); padding: 11px 18px; border-radius: 3px; font: 500 .8rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+.letter-open:hover { filter: brightness(1.08); }
+
+/* ---------- gallery ---------- */
+.gallery { columns: 3 260px; column-gap: 20px; }
+.gallery figure { break-inside: avoid; margin-bottom: 22px; }
+.gallery button { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; text-align: left; }
+.gallery .mat { padding: 10px; }
+.gallery figcaption { margin-top: 8px; display: grid; gap: 2px; }
+.gallery figcaption b { font: 600 .95rem/1.35 var(--serif); }
+.gallery figcaption span { font: 400 .72rem/1.4 var(--mono); color: var(--ink-3); }
+
+/* ---------- sources ---------- */
+.sources { display: grid; gap: 0; max-width: 820px; }
+.sources details { border-top: 1px solid var(--rule-2); }
+.sources summary { cursor: pointer; padding: 12px 0; font: 500 .8rem/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.sources ul { margin: 0 0 16px; padding-left: 1.1em; display: grid; gap: 6px; font-size: .95rem; }
+.sources li span { font-family: var(--mono); font-size: .76rem; color: var(--brass); margin-right: 6px; }
+.closing { padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid var(--rule); text-align: left; }
+.closing .wrap { display: grid; gap: 18px; max-width: 760px; }
+.closing p.big { font: 400 clamp(1.5rem, 3.4vw, 2.1rem)/1.35 var(--serif-display); font-style: italic; }
+.closing footer { font: 400 .78rem/1.5 var(--mono); color: var(--ink-3); }
+.colophon { padding-block: 28px 48px; font: 400 .74rem/1.6 var(--mono); color: var(--ink-3); border-top: 1px solid var(--rule-2); }
+
+/* ---------- dialogs ---------- */
+dialog { border: 0; padding: 0; background: var(--paper); color: var(--ink); max-width: min(1100px, calc(100vw - 24px)); width: 100%; max-height: calc(100dvh - 24px); box-shadow: 0 30px 80px -20px rgba(0,0,0,.55); }
+dialog::backdrop { background: rgba(10, 14, 16, .72); }
+.dlg { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; max-height: calc(100dvh - 24px); }
+.dlg-bar { display: flex; align-items: center; gap: 8px; padding: 10px 12px 10px 18px; border-bottom: 1px solid var(--rule); }
+.dlg-bar .t { font: 500 .72rem/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); margin-right: auto; min-width: 0; }
+.iconbtn { border: 1px solid var(--rule); background: var(--paper-2); width: 38px; height: 38px; border-radius: 3px; cursor: pointer; display: grid; place-items: center; font: 400 1.1rem/1 var(--mono); }
+.iconbtn:hover { border-color: var(--accent); }
+.dlg-body { overflow: auto; padding: 18px; background: var(--paper-2); }
+.dlg-body img { margin-inline: auto; max-height: 72dvh; width: auto; }
+.dlg-body.wide img { max-height: none; max-width: none; width: auto; height: min(52dvh, 480px); }
+.dlg-foot { padding: 14px 18px 18px; display: grid; gap: 6px; border-top: 1px solid var(--rule); }
+.dlg-foot b { font: 600 1.05rem/1.35 var(--serif); }
+.dlg-foot span { font: 400 .76rem/1.5 var(--mono); color: var(--ink-3); }
+.memoir { max-width: 64ch; margin-inline: auto; display: grid; gap: 1.05em; padding: 12px 4px 24px; }
+.memoir p { font-size: 1.05rem; }
+.memoir p:first-child::first-letter { font: 400 3.2em/.8 var(--serif-display); float: left; margin: .08em .08em 0 0; color: var(--brass); }
+.memoir .sig { font-family: var(--serif-display); font-style: italic; font-size: 1.25rem; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 900px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero-photo { width: min(100%, 360px); }
+  .story .wrap { grid-template-columns: minmax(0, 1fr); }
+  .rail { display: none; }
+  .minibar { display: flex; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 52px); z-index: 10; gap: 10px; align-items: baseline;
+    margin-inline: calc(-1 * var(--gutter)); padding: 8px var(--gutter); background: color-mix(in srgb, var(--paper) 92%, transparent);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule-2); font: 500 .76rem/1.3 var(--mono); }
+  .minibar .y { font: 400 1.25rem/1 var(--serif-display); font-variant-numeric: lining-nums tabular-nums; }
+  .minibar .a { color: var(--brass); letter-spacing: .06em; text-transform: uppercase; }
+  .minibar .c { color: var(--ink-2); font-family: var(--serif); font-style: italic; margin-left: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .two, .tree, .maps { grid-template-columns: minmax(0, 1fr); }
+  .person-card { position: static; }
+  .gen { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .gen-label { padding-top: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
+</style>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="mark" href="#top">Margaret</a>
+    <nav aria-label="Sections">
+      <a href="#story">Her life</a>
+      <a href="#family">Family</a>
+      <a href="#places">Places</a>
+      <a href="#letter">The letter</a>
+      <a href="#photos">Photos</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <figure class="hero-photo">
+        <div class="mat"><button type="button" id="hero-btn" style="all:unset;cursor:zoom-in;display:block"><img id="hero-img" alt="" width="1717" height="2576"></button></div>
+        <figcaption>Senior portrait, 1941. Signed by the Zintsmaster Studio, Minneapolis.</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">In memory</p>
+        <h1>Margaret <span>Thompson Jensen</span></h1>
+        <p class="dates num">November 2, 1923 &nbsp;–&nbsp; September 6, 2026</p>
+        <p class="lede">She was born in Peterson, a small village on the Root River, the fourth child of Sven, a machinist with a head for new ventures, and Agnes, a piano teacher. She lived to be 102. In between came a move to the Cities, a trailer with infant twins, a house on Clinton Avenue, seventy-eight years with Norb, and a church she called home.</p>
+        <ul class="facts">
+          <li><b class="num">102</b><span>years</span></li>
+          <li><b class="num">78</b><span>years married</span></li>
+          <li><b class="num">4</b><span>children</span></li>
+          <li><b>First Free</b><span>home church</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="story" id="story" aria-label="Her life">
+    <div class="wrap">
+      <aside class="rail" aria-hidden="true">
+        <div class="rail-inner">
+          <div class="rail-now">
+            <div class="rail-year" id="rail-year">1923</div>
+            <div class="rail-age" id="rail-age">Born November 2</div>
+            <div class="rail-ch" id="rail-ch">Peterson</div>
+          </div>
+          <div class="scale" id="scale"></div>
+        </div>
+      </aside>
+
+      <div class="chapters">
+        <div class="minibar" aria-hidden="true"><span class="y" id="mini-year">1923</span><span class="a" id="mini-age">born</span><span class="c" id="mini-ch">Peterson</span></div>
+
+        <!-- 1 -->
+        <article class="chapter" id="peterson" data-chapter="peterson">
+          <header>
+            <p class="eyebrow num">1923 – 1941</p>
+            <h2>Peterson</h2>
+            <p class="kicker">A small village on the Root River in Fillmore County, five miles upriver from Rushford.</p>
+          </header>
+          <div data-historic="bird"></div>
+          <div class="prose">
+            <p data-year="1923">Margaret was born at 1:45 in the morning on November 2, 1923, in the village of Peterson. The doctor came over from Rushford. On her birth certificate her name is spelled <i>Margrette</i>. She was the fourth living child of Sven and Agnes Thompson, after Paul, Dorothy and Lynn.</p>
+          </div>
+          <div data-record="birth"></div>
+          <div class="prose">
+            <p>Her father gave his occupation that day as “Dealer in gravel.” By forty, Sven had already been a great many things: a homesteader raising flax in North Dakota, a chicken farmer whose pedigreed Wyandotte flock was wiped out by disease, a machinist trained at a gasoline-engine factory in Northfield, and for eight years Peterson’s car dealer. In 1922, with credit tight, he sold the dealership and put every dollar he had into gravel land and washing and screening equipment. Like many people, he wrote later, he didn’t believe the Depression would last. When it did, he took whatever work he could find: plumber, machinist, carpenter, common labor.</p>
+          </div>
+
+          <p class="subhead" data-year="1914">Before she was born: the motorcycle and the Metz</p>
+          <div class="two">
+            <div class="prose">
+              <p>Ten years before Margaret arrived, her father ran the Peterson Machine Company. He sold motorcycles, and in January 1914 he threw a supper at the hotel for everyone who had bought one from him. The Rushford correspondent called it the first motorcycle club in the vicinity.</p>
+              <p>He was also courting Agnes Gullickson, who taught piano in Peterson and, as Sven wrote, “adored flowers and their culture.” He asked her to ride on the handlebars of his motorcycle. She flatly refused. He came back with a car.</p>
+              <blockquote class="letter"><p>“But, with persistence, finally she consented to a ride in a Metz roadster.”</p><footer>Sven A. Thompson, <i>To My Grandchildren</i>, 1963</footer></blockquote>
+              <p data-year="1915">They married on March 30, 1915, her twenty-sixth birthday. Over the next eight years the dealership sold more than two hundred cars: Metz, Imperial, Dort, Ford, Buick.</p>
+            </div>
+            <div data-record="moto1914"></div>
+          </div>
+          <div class="slips pair"><div data-record="dort1915"></div><div data-record="alter1917"></div></div>
+
+          <p class="subhead" data-year="1930">A full house</p>
+          <div data-historic="millst"></div>
+          <div class="prose">
+            <p>When the census taker came to the Thompson house on April 22, 1930, Margaret was six. Her father was working as a plumber with a tin shop. The family owned their home, and they owned a radio. Living with them was Agnes’s younger sister, Cora Gullickson, who worked at the post office. After their mother died in 1911, Agnes had kept house for Cora and their brother Adolph; when Agnes married, Cora took over.</p>
+          </div>
+          <div data-record="c1930"></div>
+          <div class="prose">
+            <p data-year="1931">The next June, her little brother Stanley died. He was five, and Margaret was seven. He is buried at East Grace Cemetery in Peterson, where their parents were later buried too.</p>
+            <p data-year="1937">In March 1937, when Margaret was thirteen, the Root River flooded and jammed with ice at Peterson. The Bue Studio of Lanesboro photographed it.</p>
+          </div>
+          <div data-historic="icejam"></div>
+          <div class="prose">
+            <p data-year="1940">By April 1940 Margaret was sixteen and in her third year of high school. Her father now had his own plumbing shop. Paul was away at college. Lynn, twenty, was listed as a “new worker” who had been looking for a job for twenty-two weeks, a sign of how slowly the Depression lifted in small towns.</p>
+          </div>
+          <div data-record="c1940"></div>
+          <div data-historic="girls"></div>
+          <div class="prose">
+            <p data-year="1941">She graduated from Peterson High School in 1941.</p>
+          </div>
+          <div data-photos="peterson"></div>
+        </article>
+
+        <!-- 2 -->
+        <article class="chapter" id="cities" data-chapter="cities">
+          <header>
+            <p class="eyebrow num">1941 – 1948</p>
+            <h2>To the Cities</h2>
+            <p class="kicker">A war plant, a new city, and a young sailor from Worthington.</p>
+          </header>
+          <div class="prose">
+            <p>In 1941 her father hired on with the U.S. government as a machinist at the new cartridge plant near New Brighton, the Twin Cities Ordnance Plant, which was being built to turn out rifle and machine-gun ammunition. The family moved to St. Paul. Margaret was seventeen.</p>
+            <p>Her senior portrait is signed by the Zintsmaster Studio, which in 1941 had rooms in the Albrecht Building at 816 Nicollet Avenue in downtown Minneapolis. She may have sat for it just as the family was moving.</p>
+          </div>
+          <div data-record="zints1941"></div>
+          <div class="prose">
+            <p data-year="1943">Norbert Vernon Jensen was born on June 1, 1925, in Worthington, in the southwest corner of the state, the son of Raymond and Gertrude (Fischer) Jensen. He served in naval aviation during the Second World War.</p>
+          </div>
+          <div class="gap-note"><b>Still missing from the record:</b> where Margaret worked in the war years, and how she and Norb met. If you know the story, this is where it belongs.</div>
+          <div data-photos="cities"></div>
+        </article>
+
+        <!-- 3 -->
+        <article class="chapter" id="trailer" data-chapter="trailer">
+          <header>
+            <p class="eyebrow num">1948 – 1953</p>
+            <h2>Trailer No. 3</h2>
+            <p class="kicker">Married in St. Paul, and twins before the second anniversary.</p>
+          </header>
+          <div class="prose">
+            <p>Margaret and Norb married in St. Paul on August 28, 1948. She was twenty-four, and he was twenty-three.</p>
+            <p data-year="1950">Their twin sons, Mark and Keith, were born in Worthington on January 22, 1950. Three months later the census found the four of them in trailer #3 at the Red Top Cabins trailer camp, 7421 Lyndale Avenue South, in Richfield. The camp was also a tourist court. Their neighbors included an airline pilot and a pipeline foreman.</p>
+          </div>
+          <div data-record="c1950"></div>
+          <div class="prose">
+            <p>Norb was twenty-four. He had come from Nobles County the year before, had worked twenty-six weeks in 1949, and had been going to school since February. Margaret was twenty-six and keeping house, with two infants in a trailer.</p>
+            <p>In St. Paul that April, her father, sixty-six, was still working as a machinist.</p>
+            <p data-year="1951">Kristen was born on September 4, 1951, in Minneapolis.</p>
+          </div>
+          <div data-record="c1950sp"></div>
+          <div data-photos="trailer"></div>
+        </article>
+
+        <!-- 4 -->
+        <article class="chapter" id="clinton" data-chapter="clinton">
+          <header>
+            <p class="eyebrow num">1953 – 1970s</p>
+            <h2>4832 Clinton Avenue</h2>
+            <p class="kicker">A house of their own in south Minneapolis, year after year in the city directory.</p>
+          </header>
+          <div class="prose">
+            <p>By 1953 the Jensens owned 4832 Clinton Avenue in south Minneapolis, and they had a telephone. The city directory lists the household year after year under Norb’s name, with Margaret in parentheses, usually as “Margt T.” The T is for Thompson. The listings also trace Norb’s work: welder, carpenter, plant superintendent, and carpenter for the city.</p>
+          </div>
+          <div class="dir" id="dir">
+            <div class="dir-years" role="tablist" aria-label="Directory year" id="dir-years"></div>
+            <div class="dir-panel" role="tabpanel" id="dir-panel" aria-live="polite"></div>
+          </div>
+          <div class="prose">
+            <p class="muted" style="font-size:.95rem">How to read a directory line: <span class="mono">h</span> means householder (at home), <span class="mono">Margt</span> is Margaret, <span class="mono">wldr</span> welder, <span class="mono">carp</span> carpenter, <span class="mono">plant supt</span> plant superintendent. A few years misprint her initial.</p>
+            <p data-year="1956">Bruce, the youngest, was born on October 26, 1956.</p>
+            <p data-year="1959">On February 7, 1959, Margaret’s mother died suddenly in St. Paul. Her father came to live on Clinton Avenue. Four years later, in February 1963, Sven sat down and wrote the story of his life and Agnes’s for his grandchildren, which included Margaret’s four. He titled it <i>To My Grandchildren</i>.</p>
+          </div>
+          <blockquote class="letter"><p>“After her death, I lived with my youngest daughter, Margaret, and her husband, Norbert V. Jensen, in Minneapolis, Minn. for a while.”</p><footer>Sven A. Thompson, 1963 · <a href="#letter">read the whole letter</a></footer></blockquote>
+          <div class="prose">
+            <p data-year="1965">Sven died in May 1965 in Minneapolis, at eighty-one. He was buried at East Grace Cemetery in Peterson, where Agnes and Stanley lie.</p>
+            <p data-year="1975">The Clinton Avenue listing stayed in the phone book through at least 1975.</p>
+          </div>
+          <div data-record="clinton1953"></div>
+          <div data-photos="clinton"></div>
+        </article>
+
+        <!-- 5 -->
+        <article class="chapter" id="firstfree" data-chapter="firstfree">
+          <header>
+            <p class="eyebrow">Faith</p>
+            <h2>First Free</h2>
+            <p class="kicker">First Evangelical Free Church, 5150 Chicago Avenue South, Minneapolis.</p>
+          </header>
+          <div class="prose">
+            <p>Margaret was born into a household that had just made a promise. In the last lines of his letter, her father wrote:</p>
+          </div>
+          <blockquote class="letter"><p>“During 1923, Agnes and I agreed to rededicate our lives to our dear Savior and Lord, Jesus Christ. May this resolve also be shared by all our kin and generations, now and for the years to come.”</p><footer>Sven A. Thompson, February 1963</footer></blockquote>
+          <div class="prose">
+            <p>Her mother had played organ for church choirs. In Minneapolis, Margaret and Norb made First Free their home church. Their faith was very important to both of them, the family says, and it became home to the next generations too.</p>
+          </div>
+          <blockquote class="words">
+            <p>“I have called First Evangelical Free Church my home church for 30 years. Growing up close by in Richfield, I attended with my parents and grandparents (Norb &amp; Margaret Jensen) until my family volunteered for the Brookview church plant in 1987. Six years later, after Brookview closed down, I elected to return to First Free. This place is truly dear to me. FEFC is where I grew up and was baptized.”</p>
+            <footer>Peter McWilliams, her grandson, <i>Church Family News</i>, October 2016</footer>
+          </blockquote>
+          <div data-photos="firstfree"></div>
+        </article>
+
+        <!-- 6 -->
+        <article class="chapter" id="century" data-chapter="century">
+          <header>
+            <p class="eyebrow num">2007 – 2026</p>
+            <h2>A Century</h2>
+            <p class="kicker">Seventy, seventy-two, seventy-five years married, and a hundredth birthday.</p>
+          </header>
+          <div class="prose">
+            <p data-year="2007">When her sister Dorothy died in 2007, the obituary listed “a sister: Margaret (and Norbert) Jensen of Bloomington.” Margaret was the last of the five Thompson children.</p>
+            <p data-year="2018">First Free kept count of the anniversaries in its newsletter. In October 2018: “Happy anniversary to Norbert &amp; Margaret Jensen, who celebrated 70 years of marriage in August.” In 2020 they were on the list of seniors married sixty-five years or more: “Aug. 28 | 72 years.” In August 2023: “Happy 75th wedding anniversary to Margaret and Norbert Jensen!”</p>
+          </div>
+          <div class="prose">
+            <p data-year="2022">On October 30, 2022, three days before her ninety-ninth birthday, the family threw her a party, and she wore a gold tiara that read “Aged to Perfection.” Norb and all four children were there: the same six who had sat for a studio portrait some fifty-five years before.</p>
+          </div>
+          <div data-pair="c1967-jensen-family-portrait|2022-10-30-margaret-99th-birthday-with-norb-and-children" data-pair-caption="The same six, about 1967 and October 30, 2022"></div>
+          <div class="prose">
+            <p data-year="2023">That December the newsletter added one more line: “Happy Birthday to Margaret Jensen who celebrated her 100th birthday last month!”</p>
+          </div>
+          <div data-photo="2023-11-margaret-100th-birthday-party-times"></div>
+          <div class="prose">
+            <p data-year="2025">On June 8, 2025, the family gathered for Norb’s birthday. He had turned one hundred the week before, and he wore his Honor Flight shirt.</p>
+          </div>
+          <div data-photos="century"></div>
+          <div class="prose">
+            <p data-year="2026">Margaret died in Bloomington on September 6, 2026. She was 102. She and Norb had been married for seventy-eight years.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="family">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Family</p>
+        <h2>Where she came from</h2>
+        <p class="muted">Four generations, from the grandparents who farmed and kept store around Peterson to her own four children. Choose a name to read more.</p>
+      </div>
+      <div class="tree">
+        <div class="gens" id="gens"></div>
+        <aside class="person-card" id="person-card" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="places">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Places</p>
+        <h2>Her Minnesota</h2>
+        <p class="muted">Most of her life was lived between Peterson and the Twin Cities, about 110 miles apart. Choose a place.</p>
+      </div>
+      <div class="maps">
+        <div class="mapbox"><span class="cap">Minnesota · counties she knew shaded</span><svg id="map-state" role="group" aria-label="Map of Minnesota"></svg></div>
+        <div class="mapbox"><span class="cap">The Twin Cities · positions approximate</span><svg id="map-metro" role="group" aria-label="Map of the Twin Cities"></svg></div>
+        <div class="place-card" id="place-card" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section letter-sec" id="letter">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">February 1963</p>
+        <h2>To My Grandchildren</h2>
+        <p>Margaret’s father was seventy-nine and living in her house when he wrote down his life and her mother’s for the next generation. The letter survives in the family tree, and it is the reason we know about the motorcycle, the Metz roadster and the gravel pit.</p>
+      </div>
+      <blockquote class="letter"><p>“She used her easy-going personality to smooth over the rough spots, to make life wonderful and worth while for the whole family.”</p><footer>Sven, on Agnes</footer></blockquote>
+      <button class="letter-open" type="button" id="letter-open">Read the whole letter</button>
+    </div>
+  </section>
+
+  <section class="section" id="photos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Photographs</p>
+        <h2>From the family</h2>
+        <p class="muted" id="photo-count"></p>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <section class="section" id="sources">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Sources</p>
+        <h2>How we know</h2>
+        <p class="muted">Everything on this page comes from a record, a family photograph, or something the family has said. Where records disagree, the notes say so.</p>
+      </div>
+      <div class="sources">
+        <details open>
+          <summary>Records about Margaret</summary>
+          <ul>
+            <li><span>S0032</span>Minnesota Record of Birth no. 9958, 1923. Minnesota Historical Society.</li>
+            <li><span>S0033–S0035</span>U.S. Census, 1930 and 1940 (Peterson) and 1950 (Richfield). National Archives.</li>
+            <li><span>S0037</span>Minneapolis city directories, 1953–1964, and phone books to 1975. Hennepin County Library.</li>
+            <li><span>S0041</span><i>Church Family News</i>, First Evangelical Free Church, October 2016, October 2018, October 2020, August 2023, December 2023.</li>
+            <li><span>S0042</span>Obituary of Dorothy Anderson, <i>West Central Tribune</i>, 17 December 2007.</li>
+            <li><span>S0018</span>The McWilliams family tree (Ancestry), including Sven A. Thompson’s letter <i>To My Grandchildren</i>, February 1963.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Records about her family and Peterson</summary>
+          <ul>
+            <li><span>S0036</span>U.S. Census, 1950, St. Paul (Sven and Agnes Thompson).</li>
+            <li><span>S0038</span>Minneapolis city directory, 1941 (Zintsmaster Studio).</li>
+            <li><span>S0039</span>Minnesota death index: Agnes B. Thompson (1959), Sven A. Thompson (1965).</li>
+            <li><span>S0046</span>Find a Grave memorials for the Thompson and Gullickson families, Peterson and Arendahl cemeteries.</li>
+            <li><span>S0047</span><i>La Crosse Tribune</i>, 28 January 1914, Rushford column.</li>
+            <li><span>S0048</span><i>Motor Age</i>, 8 April 1915 and 23 August 1917.</li>
+            <li><span>S0049</span>Polk’s <i>Minnesota State Gazetteer</i>, 1920–21, Peterson.</li>
+            <li><span>S0050</span>General Land Office patent, Swen A. Thompson, Adams County, North Dakota, 1908.</li>
+            <li><span>S0051</span><i>In the World War: Fillmore County</i>, 1920.</li>
+            <li><span>S0052–S0054</span>Histories of Fillmore County (1882, 1912) and the 1896 plat book.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Where the records disagree</summary>
+          <ul>
+            <li>Sven’s death: the family tree says 25 May 1965 in St. Paul; the state death index says 18 May 1965 in Hennepin County. This page says May 1965.</li>
+            <li>Agnes and St. Olaf: Sven wrote that she graduated from the music department on 7 June 1909. St. Olaf’s printed register of music graduates for 1906–1919 does not list her. She may have earned the teacher’s certificate he also mentions. The page tells it as Sven told it.</li>
+            <li>The carburetor: family lore says Sven sent carburetor plans to Henry Ford. No patent in his name has been found.</li>
+            <li>Spellings: “Margrette” on her birth certificate; “Kieth” on the 1950 census; “Swen” on the 1930 and 1940 censuses.</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <p class="big">“May this resolve also be shared by all our kin and generations, now and for the years to come.”</p>
+      <footer>Sven A. Thompson to his grandchildren, Margaret’s four among them · 1963</footer>
+    </div>
+  </section>
+  <div class="colophon"><div class="wrap">Made by her family, September 2026. Family photographs belong to the family. Census images from the National Archives; newspaper and trade-journal pages via the Internet Archive; directory pages courtesy of Hennepin County Library; plat book and Peterson photographs courtesy of the Fillmore County Historical Society. Private: please don’t share outside the family.</div></div>
+</main>
+
+<dialog id="lb" aria-label="Image viewer">
+  <div class="dlg">
+    <div class="dlg-bar">
+      <span class="t" id="lb-t"></span>
+      <button class="iconbtn" type="button" id="lb-prev" aria-label="Previous photo">‹</button>
+      <button class="iconbtn" type="button" id="lb-next" aria-label="Next photo">›</button>
+      <button class="iconbtn" type="button" id="lb-close" aria-label="Close">×</button>
+    </div>
+    <div class="dlg-body" id="lb-body"></div>
+    <div class="dlg-foot" id="lb-foot"></div>
+  </div>
+</dialog>
+
+<dialog id="memoir-dlg" aria-label="To My Grandchildren">
+  <div class="dlg">
+    <div class="dlg-bar"><span class="t">To My Grandchildren · Sven A. Thompson · February 1963</span><button class="iconbtn" type="button" id="memoir-close" aria-label="Close">×</button></div>
+    <div class="dlg-body"><div class="memoir" id="memoir"></div></div>
+    <div class="dlg-foot"><span>Transcribed in the family’s Ancestry tree. Spelling as written.</span></div>
+  </div>
+</dialog>
+
+<script>
+const DATA = {"chapters":[{"id":"peterson","title":"Peterson","start":1923,"end":1941},{"id":"cities","title":"To the Cities","start":1941,"end":1948},{"id":"trailer","title":"Trailer No. 3","start":1948,"end":1953},{"id":"clinton","title":"4832 Clinton Avenue","start":1953,"end":1987},{"id":"firstfree","title":"First Free","start":1987,"end":2007},{"id":"century","title":"A Century","start":2007,"end":2026}],"photos":[{"caption":"Margaret's senior photo from 1941","date":"1941","occasion":"High school senior portrait, Peterson High School","place":"","people":["Margaret Thompson (later Jensen)"],"alt":"Studio portrait of Margaret at about seventeen, with softly waved shoulder-length hair and a white jacket with wide lapels.","year":1941,"src":"img/photos/1941-margaret-senior-portrait.jpg","w":1200,"h":1800,"chapter":"peterson"},{"caption":"Margaret and her family","date":"about 1966-1968 (estimated)","occasion":"Studio family portrait","place":"","people":["Margaret (Thompson) Jensen, front left","Mark Jensen, back left","Norbert Jensen, back right","Bruce Jensen, front center-left (red blazer)","Kristen Jensen, front center-right","Keith Jensen, front right"],"alt":"The Jensen family in a studio portrait in front of a curtain: Margaret, Norb, Mark and Keith in jackets and ties, Kristen in a plaid dress, and Bruce in a red blazer.","year":1966,"src":"img/photos/c1967-jensen-family-portrait.jpg","w":1800,"h":1350,"chapter":"clinton"},{"caption":"Margaret and Norb with their grandson Peter","date":"about 1980-1982 (estimated)","occasion":"","place":"","people":["Margaret, left","Peter (grandson), center","Norb, right"],"alt":"Margaret in large glasses and a striped top, and Norb in glasses and a white shirt, smiling at their baby grandson Peter, who sits between them in a denim romper.","year":1980,"src":"img/photos/margaret-and-norb-with-peter.jpg","w":1800,"h":1200,"chapter":"clinton"},{"caption":"Grandma with Peter on college graduation day","date":"2001-09-20","occasion":"Peter's college graduation","place":"","people":["Peter (grandson), left","Margaret, right"],"alt":"Peter in a royal-blue cap and gown and gold tie stands arm in arm with Margaret, who wears glasses, a pink cardigan over a green blouse, and a red, white and blue ribbon pin; both wear the same ribbon.","year":2001,"src":"img/photos/2001-09-20-margaret-at-peters-college-graduation.jpg","w":1800,"h":1350,"chapter":"firstfree"},{"caption":"Margaret with her grandchildren Peter and Tim","date":"2022-03-28","occasion":"Fellowship time at First Evangelical Free Church, Minneapolis","place":"First Evangelical Free Church, Minneapolis, Minnesota","people":["Tim (grandson), left","Margaret (Thompson) Jensen, center","Peter (grandson), right"],"alt":"Margaret, small and smiling in a grey knit sweater, arm in arm with her grandsons Tim and Peter in the church fellowship hall.","year":2022,"src":"img/photos/2022-03-28-margaret-with-peter-and-tim.jpg","w":1350,"h":1800,"chapter":"firstfree"},{"caption":"Margaret's birthday party, with Norb and her four children","date":"2022-10-30","occasion":"Margaret's birthday party (her 99th birthday was November 2, 2022)","place":"","people":["Kristen, back left","Keith, back","Mark, back","Bruce, back right","Margaret, front left","Norb, front right"],"alt":"Margaret, seated in a floral blouse and a gold \"Aged to Perfection\" tiara, beside Norb in a light blue jacket and bolo tie; Kristen, Keith, Mark and Bruce stand behind them.","year":2022,"src":"img/photos/2022-10-30-margaret-99th-birthday-with-norb-and-children.jpg","w":1800,"h":1350,"chapter":"century"},{"caption":"“The Party Times,” a keepsake newspaper made for Margaret’s 100th birthday","date":"2023-11","occasion":"Margaret's 100th birthday (November 2, 2023)","place":"","people":["Margaret (portrait on the front page)"],"alt":"A keepsake page styled as a newspaper, “The Party Times,” dated Peterson, MN, November 2, 1923, with the headline “Margaret’s 100th Birthday,” a color portrait of Margaret in a blue top, and columns about the year 1923.","year":2023,"src":"img/photos/2023-11-margaret-100th-birthday-party-times.jpg","w":1191,"h":1800,"chapter":"century"},{"caption":"Margaret and Norb at Norb's birthday party","date":"2025-06-08","occasion":"Norb's birthday party","place":"","people":["Margaret (Thompson) Jensen","Norbert Vernon Jensen"],"alt":"Margaret and Norb seated side by side in front of a sunlit garden, both white-haired and smiling; Norb has a full white beard and wears an Honor Flight Network T-shirt.","year":2025,"src":"img/photos/2025-06-08-margaret-and-norb.jpg","w":1350,"h":1800,"chapter":"century"}],"records":[{"id":"birth","title":"Record of Birth, State of Minnesota, no. 9958","date":"2 November 1923","credit":"Minnesota Historical Society, People Records Search (non-certified image)","sid":"S0032","lines":["Full name of child: Margrette Thompson","Place: Village of Peterson, Fillmore County","Date of birth: Nov. 2, 1923, at 1:45 a.m.","Father: Sven A. Thompson, 40, born Fillmore Co. Occupation: Dealer in gravel","Mother: Agnes Gullickson, 34, born Fillmore Co. Housewife","Children of this mother now living: 4","Physician: J. Grant Davis, Rushford, Minn."],"img":"img/records/birth.jpg","w":700,"h":591},{"id":"c1930","wide":true,"title":"1930 U.S. Census, Peterson village, Fillmore County","date":"22 April 1930","credit":"National Archives, via Internet Archive","sid":"S0033","lines":["95  Thompson, Swen A.   Head      46  Plumber, tin shop  · owns home · radio","96  ——, Agnes B.        Wife      41","97  ——, Paul            Son       14","98  ——, Dorothy         Daughter  10","99  ——, Lynn            Son        8","100 ——, Margaret        Daughter   6","(next sheet) Stanley, son, 3 10/12 · Gullickson, Cora M., sister-in-law, 34, post office assistant"],"img":"img/records/c1930.jpg","w":2600,"h":160},{"id":"c1940","wide":true,"title":"1940 U.S. Census, Peterson village, Fillmore County","date":"8 April 1940","credit":"National Archives","sid":"S0034","lines":["1  Thompson, Swen A.  Head      56  Plumber, own plumbing shop · home worth $2,400","2  ——, Agnes         Wife      51","3  ——, Paul          Son       24  in college, 3rd year","4  ——, Lynn          Son       20  new worker, seeking work 22 weeks","5  ——, Margaret      Daughter  17  in high school, 3rd year","6  Gullickson, Cora  Lodger    43  Assistant postmaster"],"img":"img/records/c1940.jpg","w":2600,"h":202},{"id":"moto1914","title":"La Crosse Tribune, Rushford column","date":"28 January 1914","credit":"La Crosse Tribune, via Internet Archive (public domain)","sid":"S0047","lines":[],"img":"img/records/moto1914.jpg","w":819,"h":1600},{"id":"dort1915","wide":true,"title":"Motor Age, new dealer agencies","date":"8 April 1915","credit":"Motor Age, via Internet Archive (public domain)","sid":"S0048","lines":["Peterson, Minn. ....... Peterson Mch. Co. ....... Dort"],"img":"img/records/dort1915.jpg","w":1500,"h":160},{"id":"alter1917","title":"Motor Age, readers' clinic","date":"23 August 1917","credit":"Motor Age, via Internet Archive (public domain)","sid":"S0048","lines":[],"img":"img/records/alter1917.jpg","w":1600,"h":661},{"id":"zints1941","title":"Minneapolis City Directory","date":"1941","credit":"Hennepin County Library","sid":"S0038","lines":["ZINTSMASTER STUDIO, D W Zintsmaster Prop, Studio and Home Portraits","307 Albrecht Bldg, 816 Nicollet av"],"img":"img/records/zints1941.jpg","w":1283,"h":760},{"id":"c1950","wide":true,"title":"1950 U.S. Census, Richfield village, Hennepin County","date":"21 April 1950","credit":"National Archives (public domain)","sid":"S0035","lines":["Red Top Cabins trailer camp, 7421 Lyndale Av. So., trailer #3","19  Jensen, Norbert V.  head  24  married  born Minn.","20  ——, Margaret        wife  26  married  born Minn.  keeping house","21  ——, Mark C.         son   Jan.","22  ——, Kieth M.        son   Jan.","Norbert (sample line): lived in Nobles County a year earlier · attending school since Feb. 1 · worked 26 weeks in 1949 · WWII veteran"],"img":"img/records/c1950.jpg","w":2600,"h":368},{"id":"c1950sp","wide":true,"title":"1950 U.S. Census, St. Paul, Ramsey County","date":"April 1950","credit":"National Archives (public domain)","sid":"S0036","lines":["Thompson, Sven A.  Head  66  Machinist, metal products manufacture","——, Agnes B.       wife  61"],"img":"img/records/c1950sp.jpg","w":2600,"h":172},{"id":"clinton1953","title":"Minneapolis City Directory, street guide","date":"1953","credit":"Hennepin County Library","sid":"S0037","lines":["4832 △ Jensen Norbert V ◎   (△ owns the home · ◎ has a telephone)"],"img":"img/records/clinton1953.jpg","w":1600,"h":640},{"id":"fred","title":"Frederick H. Thompson, from In the World War: Fillmore County","date":"1920","credit":"In the World War: Fillmore County (1920), via Internet Archive (public domain)","sid":"S0051","lines":["Born March 5, 1895; son of Frederick E. Thompson, Peterson, Minn.","Sergeant 1st class, 126th Aero Squadron, Kelly Field"],"img":"img/records/fred.jpg","w":600,"h":860},{"id":"adolph","title":"Adolph G. Gullickson, from In the World War: Fillmore County","date":"1920","credit":"In the World War: Fillmore County (1920), via Internet Archive (public domain)","sid":"S0051","lines":["Born Jan. 17, 1900; brother of Miss Cora Gullickson, Peterson"],"img":"img/records/adolph.jpg","w":600,"h":860},{"id":"plat1896","title":"Plat book of Fillmore County, Arendahl Township, section 13","date":"1896","credit":"Fillmore County Historical Society, via Minnesota Digital Library","sid":"S0054","lines":["F. E. Thompson, 80 acres: her grandfather's farm, northwest of Peterson"],"img":"img/records/plat1896.jpg","w":1000,"h":800}],"directory":[{"year":"1953","text":"Norbert V (Margt) wldr Hustad Co h4832 Clinton av","job":"welder, Hustad Co.","img":"img/records/dir-1953.jpg","w":1400,"h":560},{"year":"1955","text":"Norbert V (Margt T) carp h4832 Clinton av","job":"carpenter","img":"img/records/dir-1955.jpg","w":1400,"h":560},{"year":"1956","text":"Norbert V (Margaret) h4832 Clinton av","job":"","img":"img/records/dir-1956.jpg","w":1400,"h":560},{"year":"1957","text":"Norbert V (Margt) h4832 Clinton av","job":"","img":"img/records/dir-1957.jpg","w":1400,"h":560},{"year":"1958","text":"Norbert V (Margt T) plant supt Andrew Kindem & Sons h4832 Clinton av","job":"plant superintendent, Andrew Kindem & Sons","img":"img/records/dir-1958.jpg","w":1400,"h":560},{"year":"1959","text":"Norbert V (Margt T) plant supt Andrew Kindem & Sons h4832 Clinton av","job":"plant superintendent, Andrew Kindem & Sons","img":"img/records/dir-1959.jpg","w":1400,"h":560},{"year":"1960","text":"Norbert V (Margt G) plant supt Andrew Kindem & Sons h4832 Clinton av","job":"plant superintendent, Andrew Kindem & Sons","img":"img/records/dir-1960.jpg","w":1400,"h":560},{"year":"1961","text":"Norbert V (Margt T) carp City Eng Dept h4832 Clinton av","job":"carpenter, City Engineering Dept.","img":"img/records/dir-1961.jpg","w":1400,"h":560},{"year":"1962","text":"Norbert V (Margt T) carp City Eng Dept h4832 Clinton av","job":"carpenter, City Engineering Dept.","img":"img/records/dir-1962.jpg","w":1400,"h":560},{"year":"1963–64","text":"Norbert V (Margaret T) carp City Eng Dept h4832 Clinton av","job":"carpenter, City Engineering Dept.","img":"img/records/dir-1963–64.jpg","w":1400,"h":560}],"historic":[{"id":"bird","title":"Peterson from the bluff","caption":"The village of Peterson, with the high school at center and the steel bridge of 1898 over the Root River in the foreground. Undated.","img":"img/historic/bird.jpg","w":1800,"h":1231,"credit":"Bue Studio negative fchs_1578, Fillmore County Historical Society. Used with permission."},{"id":"millst","title":"Mill Street, Peterson","caption":"Mill Street at the Milwaukee Road crossing, looking west toward Haslerud Bluff. The stone building is Quickstad’s Wagon Shop. Undated.","img":"img/historic/millst.jpg","w":1800,"h":1427,"credit":"Bue Studio negative fchs_416, Fillmore County Historical Society. Used with permission."},{"id":"icejam","title":"Ice jam on the Root River, March 6, 1937","caption":"Inscribed on the negative: “Highwater with Ice Jam at Peterson, Minn. March 6, 1937.” Margaret was thirteen. The high school, creamery and feed mill stand across the river.","img":"img/historic/icejam.jpg","w":1800,"h":1419,"credit":"Bue Studio negative fchs_137, Fillmore County Historical Society. Used with permission."},{"id":"girls","title":"Peterson High School girls’ basketball team, 1930–31","caption":"Her high school’s girls’ team, ten years before Margaret’s class of 1941. No one in the photograph is identified as family.","img":"img/historic/girls.jpg","w":1800,"h":1412,"credit":"Bue Studio negative bin-36, Fillmore County Historical Society. Used with permission."}],"memoir":["Agnes Beatta Gillickson, was born March 30, 1889, in Rushford, Minn., the daughter of Ole and Clara Gillickson. From Rushford, the family moved to Peterson, Minn., where Agnes grew up and received her education in the grade and high school of Peterson. She was only twelve years old when her father died. And when her mother passed away in 1911, she was 22; her sister, Cora, 15; and Adolph, 11. Consequently, Agnes had to take charge of the family and keep house for themselves and Grandfather Jackson, who owned the home where they lived.","Before her mother died, Agnes had the opportunity to attend St. Olaf College of Northfield, Minnesota. She graduated with special honors from the Music Department of Piano, Harmony, Form and History on the seventh day of June, 1909.","There, she also received a teacher's certificate for these subjects.","There-after, for several years, she specialized in giving private instruction to enumerable young people, in the art of playing the piano and mastering the rudiments of music. She was also adept as an organist, and served in this position for church choirs and other singing groups.","She adored flowers and their culture. She was one of the charter members of the Peterson Garden Club, and was an active member as long as she lived in Peterson.","During the latter part of 1913, her usual normal life became disturbed by the persistant attention of a young bachelor, by the name of Sven A. Thompson, who was not content with just seeing, but urged her to ride with him on the handlebars of his motorcycle.","This, however, she flatly refused. But, with persistence, finally she consented to a ride in a Metz roadster. This, of course, developed into a regular occurrence, until our betrothal in late 1914, and our marriage on March 30, 1915.","From that time on, Agnes had to establish a home of her own and handed over her former duties to her sister, Cora.","During her almost forty-five years of married life, things were not always easy, but Agnes was a most wonderful person. She used her easy-going personality to smooth over the rough spots, to make life wonderful and worth while for the whole family. She was the most wonderful gift God could give to anyone. She loved and was loved. God bless her memory!","I, Sven Augustin Thompson, was born October 17, 1883, on a farm three miles northwest of Peterson, Minn. My parents were Helga and Frederick Thompson. I received my education in the rural grade school. At the age of 16, I started two years of school at Red Wing Seminary and then two years more of high school studies at St. Olaf of Northfield, Minn.","At the age of 21, I filed on a quarter section of homestead land in Adams County, North Dakota. After improving it and raising flax for a couple years, I sold the farm and worked at different trades in Minot, North Dakota and Northfield, Minnesota.","Then I went into the chicken business. I built a 100-foot long chicken house, hatched a lot of eggs and raised 500 nice pullets. Then I shipped in a brood of fancy pedigreed Wyandotte stock, in order to get into the sale of purebred stock. But this was the cause of my first business failure. This fancy brood brought with them the dreaded disease of Roup. It infected the entire flock, and no one knew how to combat the disease. I finally chopped the heads off most of the flock, and sold the healthy on the market.","My next venture was to build a modern two-story residence -- full basement, furnace heat and plumbing. All the work, including digging the basement, was accomplished by me and my father without any other help. This home is in use at Northfield, Minn. to this day.","My next venture was to work in a gasoline engine factory in Northfield. Here I received a good training as a machinist and at the same time I took a course in Mechanical Engineering by correspondence. After mastering the basic elementary essentials of mechanics, I returned to Peterson, Minn., where I was well acquainted. I built a new salesroom and shop. This was in 1911. Then I equipped the shop with modern machinery and tools to handle any job in the machine line. Before people began buying autos, I sold and installed hot water heating plants and plumbing, sold tractors with plows, threshing machines, internal combustion engines, motorcycles, electric lighting plants and wiring, cream separators, etc. I also built up a large oil business in and around Peterson, delivering gasoline, kerosene and lubrication oils out into the countryside by the tankful or the gallon.","From 1914 to 1922, the auto business became the main endeavor. During those years over 200 Metz, Imperial, Dort, Ford, Buick, and other automobiles were sold and delivered. Benjamin L. Thompson, my cousin, was a partner in the selling of cars for a while during 1916 and 1917.","The servicing of automobiles was a large business in itself. After World War I, my brother, Frederick, was in charge of the maintenance and repair department. In 1922, money and credit becoming very tight, I sold my entire business to two young men, Gilmer Gilbertson and John Hill.","My next and last business venture was in the sand and gravel business. Like so many people, in those days, I did not believe that the depression years would last very long so I invested every dollar I owned into gravel property and modern equipment for the washing, screening and handling of such a product.","After the experience, I worked on any job I could get -- plumber, machinist, carpenter, and common labor. In 1941, I hired out to the U.S. Government as a machinist in the Cartridge Factory near New Brighton, Minnesota.","So, I moved my family to St. Paul, Minn. And after the World War II was over, worked as a machinist in the factories of St. Paul, until 67 years old in the spring of 1951.","By this time, all the children were married and had established homes of their own. Agnes and I continued to live in St. Paul until the sudden death of my dear life partner, Agnes, on February 7, 1959.","After her death, I lived with my youngest daughter, Margaret, and her husband, Norbert V. Jensen, in Minneapolis, Minn. for a while. Then later I moved into Ebenezer Home for the Aged, where I intend to stay the rest my days.","During 1923, Agnes and I agreed to rededicate our lives to our dear Savior and Lord, Jesus Christ. May this resolve also be shared by all our kin and generations, now and for the years to come.","Sven A. Thompson\nFebruary, 1963"],"map":{"state":{"w":520,"h":578,"outline":"M7.2,45.9L26.7,46.0L89.2,46.0L143.0,46.1L143.0,9.5L149.3,12.5L155.9,10.9L162.7,15.2L164.6,18.1L167.8,34.5L169.5,36.6L173.7,57.0L172.3,62.7L173.2,67.1L176.5,70.6L183.3,74.2L189.0,75.2L190.9,73.7L201.2,74.6L203.8,79.3L218.1,79.9L229.4,81.6L231.2,87.0L230.5,91.0L231.9,91.9L241.8,91.8L243.0,90.6L248.1,90.7L253.5,89.1L253.3,85.2L261.1,81.4L270.2,80.0L272.3,81.7L284.8,81.7L301.7,89.7L307.8,89.4L308.0,93.4L303.6,94.0L302.6,97.0L306.4,99.5L316.0,98.5L319.5,102.9L318.1,105.6L319.5,109.6L325.2,120.0L331.0,117.8L329.1,110.9L332.2,107.3L335.7,108.2L345.6,106.9L349.3,110.5L348.9,115.8L352.9,119.1L356.1,118.4L358.3,121.3L367.9,122.0L369.1,127.5L368.1,130.0L372.8,131.7L378.2,130.7L377.5,136.8L382.7,134.5L386.0,136.3L390.4,134.3L398.4,133.0L409.2,123.7L413.2,122.7L416.3,120.1L422.1,117.6L425.4,118.7L425.4,124.2L429.4,125.5L428.0,127.7L430.3,131.6L434.1,131.8L442.3,129.5L443.7,131.8L449.6,130.6L455.7,132.1L460.2,131.0L471.4,130.3L478.2,132.6L480.4,138.0L488.3,142.3L491.9,139.5L496.6,138.7L499.6,140.4L505.0,139.9L507.6,141.4L513.5,139.6L507.1,144.1L504.8,142.5L503.8,145.3L499.8,146.5L493.7,151.2L485.0,154.0L481.8,157.0L469.6,160.6L458.3,165.0L454.8,165.5L444.9,169.2L444.0,170.3L432.0,176.6L423.3,183.0L406.4,198.0L402.4,203.6L389.5,218.1L383.4,224.0L377.3,227.3L371.2,234.5L368.6,235.4L362.0,242.2L359.7,243.0L345.3,253.9L343.2,255.9L345.1,260.0L348.4,263.8L343.5,259.7L340.2,260.6L339.5,262.9L335.7,264.1L337.8,265.6L335.3,269.1L330.1,267.8L330.1,323.7L327.7,324.5L326.3,329.3L320.7,328.8L318.3,333.3L315.1,332.3L313.2,335.4L307.3,337.2L302.6,341.1L297.9,353.1L292.8,357.1L291.1,366.4L291.3,370.8L296.3,372.5L298.6,371.7L301.9,374.3L301.7,376.9L307.1,383.8L306.8,387.9L303.3,391.7L303.6,394.1L299.6,398.1L300.0,405.5L299.1,408.1L300.5,415.5L296.7,420.3L299.3,423.0L298.9,428.3L300.3,431.7L298.6,435.1L299.3,441.2L296.5,447.7L297.7,450.7L301.4,452.9L308.7,460.0L308.5,461.9L311.8,463.2L313.9,466.8L325.6,467.6L328.4,468.9L330.8,475.3L334.1,478.4L345.8,482.6L351.0,485.7L354.3,489.0L354.3,493.3L356.1,494.6L357.3,501.4L361.3,505.1L367.7,508.4L368.4,510.8L376.8,518.1L386.0,520.5L389.5,525.0L396.5,536.1L398.6,542.2L396.8,551.4L397.2,557.2L399.6,560.2L398.6,563.8L400.5,568.1L352.6,568.1L300.0,568.1L272.8,568.2L220.4,568.2L178.2,568.1L104.7,568.1L58.0,568.1L58.0,469.0L58.2,460.8L58.0,436.2L58.0,397.1L55.6,391.8L47.2,387.0L42.9,386.7L39.6,382.2L37.5,376.2L31.4,368.2L32.6,364.5L38.5,359.4L43.6,356.2L46.5,351.1L49.7,347.4L50.7,336.9L49.7,328.3L51.2,325.3L48.6,309.9L48.3,299.4L45.3,297.2L40.6,289.2L39.4,285.2L38.5,275.5L35.9,270.9L35.4,267.7L36.6,262.1L35.2,253.0L36.4,251.6L37.8,242.1L36.4,243.0L33.8,238.8L34.0,224.9L32.8,217.4L32.4,208.1L33.1,204.0L31.4,195.6L31.7,177.9L30.5,177.6L28.8,170.4L26.3,162.9L24.4,161.5L21.8,153.3L21.1,148.5L18.5,145.8L17.3,135.9L13.6,127.7L12.9,118.7L14.5,114.4L12.6,106.8L13.4,102.5L13.1,93.8L11.5,89.0L13.1,82.8L15.2,80.8L15.9,75.8L12.4,69.3L10.5,59.2L9.1,57.2L6.5,49.2L7.2,45.9L7.2,45.9Z","counties":"M12.6,124.5L54.9,124.4L54.9,138.9L56.1,138.9L56.1,144.4L56.1,155.4L64.5,155.5L64.5,163.7L98.3,163.6L98.3,155.4L106.6,155.3L106.6,147.1L115.0,147.2L115.3,171.9L116.9,171.9L116.9,188.4L83.3,188.5L31.9,188.5L31.7,177.9L30.5,177.6L29.3,172.1L27.7,169.2L26.3,162.9L24.4,161.5L21.8,153.3L21.1,148.5L18.5,145.8L17.3,135.9L15.5,134.1L12.6,124.5L12.6,124.5ZM56.1,144.4L106.6,144.3L106.6,147.1L106.6,155.3L98.3,155.4L98.3,163.6L64.5,163.7L64.5,155.5L56.1,155.4L56.1,144.4L56.1,144.4ZM168.5,394.7L193.4,394.7L193.4,398.9L201.4,398.8L201.7,427.7L185.7,427.7L185.7,435.9L168.8,436.0L168.5,394.7L168.5,394.7ZM250.3,356.0L274.7,356.4L274.7,372.7L282.4,372.8L282.7,386.7L277.7,386.4L250.5,386.3L250.5,372.7L250.3,356.0L250.3,356.0ZM58.0,534.9L83.3,535.0L84.3,535.0L84.3,568.1L58.0,568.1L58.0,534.9L58.0,534.9ZM217.6,427.8L233.6,427.8L233.6,436.1L249.6,436.0L249.8,444.3L244.6,446.4L242.5,450.6L243.4,453.5L240.2,454.7L238.3,457.1L233.6,459.9L233.6,456.7L225.8,456.7L225.8,452.6L217.9,452.6L217.6,427.8L217.6,427.8ZM136.4,386.6L144.4,386.6L168.5,386.5L168.5,394.7L168.8,436.0L136.9,436.1L136.9,411.3L136.4,403.1L136.4,386.6L136.4,386.6ZM122.8,502.1L146.0,502.1L146.5,510.4L162.2,510.4L162.2,535.1L123.5,535.1L122.8,535.1L122.8,502.1L122.8,502.1ZM241.6,535.1L257.3,535.1L280.5,535.1L280.5,568.2L251.4,568.2L241.6,568.2L241.6,535.1L241.6,535.1ZM233.8,347.7L234.3,372.6L208.7,372.6L205.2,366.9L205.4,362.3L200.7,352.2L195.3,347.7L233.8,347.7L233.8,347.7ZM102.8,320.6L143.4,320.7L143.4,337.2L143.9,352.3L143.9,353.7L103.5,353.6L103.5,337.1L102.8,337.1L102.8,320.6L102.8,320.6ZM83.6,502.0L114.3,502.1L122.8,502.1L122.8,535.1L84.3,535.0L83.3,535.0L83.6,502.0L83.6,502.0ZM58.0,502.0L82.4,502.0L83.6,502.0L83.3,535.0L58.0,534.9L58.0,502.0L58.0,502.0ZM279.8,258.1L329.6,258.2L330.1,267.8L330.1,291.2L280.3,291.0L280.3,275.8L279.6,266.5L279.8,258.1L279.8,258.1ZM233.1,254.6L233.1,233.0L280.3,233.3L279.8,258.1L279.6,266.5L280.3,275.8L280.3,291.0L280.3,315.8L265.3,315.6L255.7,316.2L255.7,307.4L231.7,307.7L230.8,307.0L230.8,275.3L232.9,274.9L233.1,254.6L233.1,254.6ZM249.6,469.0L265.5,469.0L265.5,475.9L281.2,475.9L281.2,502.0L280.8,502.0L257.3,502.1L249.6,502.1L249.6,469.0L249.6,469.0ZM162.2,510.4L194.4,510.4L194.4,535.1L162.7,535.1L162.2,535.1L162.2,510.4L162.2,510.4ZM69.2,270.9L76.3,270.9L76.3,262.6L124.6,262.9L142.3,262.7L143.0,271.0L143.0,295.8L143.4,304.0L143.4,320.7L102.8,320.6L70.2,320.5L70.4,304.0L69.2,304.0L69.2,270.9L69.2,270.9ZM54.9,124.4L88.7,124.6L114.3,124.6L114.3,139.0L115.0,139.0L115.0,147.2L106.6,147.1L106.6,144.3L56.1,144.4L56.1,138.9L54.9,138.9L54.9,124.4L54.9,124.4ZM83.3,188.5L116.9,188.4L116.9,221.5L83.3,221.4L83.3,188.5L83.3,188.5ZM61.0,46.0L132.2,46.1L131.9,52.1L133.3,55.1L137.6,57.3L143.9,56.0L146.9,53.5L147.2,73.3L130.5,73.3L130.7,89.7L113.6,89.8L62.2,89.2L62.2,72.9L61.2,72.9L61.0,46.0L61.0,46.0ZM162.7,535.1L194.4,535.1L202.4,535.1L202.4,568.1L189.4,568.0L162.7,568.0L162.7,535.1L162.7,535.1ZM113.6,89.8L130.7,89.7L139.2,89.7L139.2,106.2L190.4,106.0L191.1,155.5L191.3,193.6L191.3,196.8L174.7,196.9L141.1,196.6L140.4,171.9L140.4,153.0L136.9,152.0L135.0,146.3L138.0,139.1L115.0,139.0L114.3,139.0L114.3,124.6L114.3,106.2L113.6,106.2L113.6,89.8L113.6,89.8ZM278.2,81.3L287.1,81.1L288.5,83.3L301.7,89.7L307.8,89.4L308.0,93.4L303.6,94.0L302.6,97.0L306.4,99.5L316.0,98.5L319.5,102.9L318.1,105.6L319.5,109.6L325.2,120.0L331.0,117.8L329.1,110.9L332.2,107.3L335.7,108.2L345.6,106.9L349.3,110.5L348.9,115.8L352.9,119.1L356.1,118.4L358.3,121.3L362.5,121.7L363.2,183.9L362.7,241.6L359.7,243.0L345.3,253.9L343.2,255.9L345.1,260.0L348.4,263.8L343.5,259.7L340.2,260.6L339.5,262.9L335.7,264.1L337.8,265.6L335.3,269.1L330.1,267.8L329.6,258.2L279.8,258.1L280.3,233.3L279.6,225.5L279.4,198.4L279.8,167.5L278.4,167.5L278.7,151.2L278.0,134.5L277.5,134.5L278.2,81.3L278.2,81.3ZM280.8,502.0L281.2,502.0L305.0,502.1L305.0,535.0L304.3,535.0L280.8,535.1L281.0,532.2L280.8,502.0L280.8,502.0ZM223.0,477.3L226.1,471.5L224.4,469.1L249.6,469.0L249.6,502.1L233.6,502.1L233.6,497.9L217.6,497.9L216.9,496.2L221.1,491.5L222.8,488.0L220.9,486.0L223.0,477.3L223.0,477.3ZM257.3,502.1L280.8,502.0L281.0,532.2L280.8,535.1L280.5,535.1L257.3,535.1L257.3,502.1L257.3,502.1ZM84.3,535.0L122.8,535.1L123.5,535.1L123.2,568.0L96.7,568.1L84.3,568.1L84.3,535.0L84.3,535.0ZM185.9,452.6L185.9,460.9L201.9,460.8L201.9,452.5L217.9,452.6L225.8,452.6L225.8,456.7L233.6,456.7L233.6,459.9L227.7,461.7L224.9,464.9L224.4,469.1L226.1,471.5L223.0,477.3L177.7,477.3L177.2,452.6L185.9,452.6L185.9,452.6ZM304.3,535.0L305.0,535.0L305.0,502.1L313.2,502.1L328.4,502.2L328.4,510.5L344.2,510.5L344.2,535.2L320.0,535.1L320.0,536.4L304.3,536.5L304.3,535.0L304.3,535.0ZM81.4,460.8L113.6,460.9L114.1,469.2L114.3,502.1L83.6,502.0L82.4,502.0L82.4,469.1L81.4,469.0L81.4,460.8L81.4,460.8ZM136.9,436.1L168.8,436.0L185.7,435.9L185.9,452.6L177.2,452.6L177.7,477.3L167.4,477.3L165.3,474.7L161.7,473.3L153.8,468.8L152.1,469.1L140.8,461.4L137.1,457.4L134.0,457.9L132.2,454.8L129.6,454.3L124.2,450.1L121.4,449.2L121.4,436.1L136.9,436.1L136.9,436.1ZM143.0,295.8L170.7,295.8L171.4,297.4L175.8,297.7L176.3,352.2L143.9,352.3L143.4,337.2L143.4,320.7L143.4,304.0L143.0,295.8L143.0,295.8ZM412.7,123.0L416.3,120.1L422.1,117.6L425.4,118.7L425.4,124.2L429.4,125.5L428.0,127.7L430.3,131.6L434.1,131.8L442.3,129.5L443.7,131.8L449.6,130.6L455.7,132.1L460.2,131.0L471.4,130.3L478.2,132.6L480.4,138.0L488.3,142.3L491.9,139.5L496.6,138.7L499.6,140.4L505.0,139.9L507.6,141.4L513.5,139.6L507.1,144.1L504.8,142.5L503.8,145.3L499.8,146.5L493.7,151.2L485.0,154.0L481.8,157.0L469.6,160.6L458.3,165.0L454.8,165.5L444.9,169.2L444.0,170.3L432.0,176.6L423.3,183.0L413.2,191.8L413.4,151.6L413.0,150.2L412.7,123.0L412.7,123.0ZM58.0,502.0L58.0,469.0L58.2,460.7L81.4,460.8L81.4,469.0L82.4,469.1L82.4,502.0L58.0,502.0L58.0,502.0ZM114.1,469.2L129.6,469.2L129.6,454.3L132.2,454.8L134.0,457.9L137.1,457.4L140.8,461.4L152.1,469.1L153.8,468.8L161.7,473.3L161.7,493.8L146.0,493.9L146.0,502.1L122.8,502.1L114.3,502.1L114.1,469.2L114.1,469.2ZM362.5,121.7L367.9,122.0L369.1,127.5L368.1,130.0L372.8,131.7L378.2,130.7L377.5,136.8L382.7,134.5L386.0,136.3L390.4,134.3L398.4,133.0L409.2,123.7L412.7,123.0L413.0,150.2L413.4,151.6L413.2,191.8L406.4,198.0L402.4,203.6L389.5,218.1L383.4,224.0L377.3,227.3L371.2,234.5L368.6,235.4L362.7,241.6L363.2,183.9L362.5,121.7L362.5,121.7ZM161.7,473.3L165.3,474.7L167.4,477.3L173.0,480.0L174.9,483.2L184.3,486.0L188.3,489.1L191.6,494.7L194.1,495.5L194.4,510.4L162.2,510.4L146.5,510.4L146.0,502.1L146.0,493.9L161.7,493.8L161.7,473.3L161.7,473.3ZM7.2,45.9L26.7,46.0L61.0,46.0L61.2,72.9L62.2,72.9L62.2,89.2L11.5,89.3L13.1,82.8L15.2,80.8L15.9,75.8L12.4,69.3L10.5,59.2L9.1,57.2L6.5,49.2L7.2,45.9L7.2,45.9ZM58.0,400.2L69.0,402.3L69.7,404.6L73.0,404.8L76.3,407.5L81.0,408.9L85.2,411.3L89.0,416.5L99.0,426.9L100.5,430.5L104.9,431.8L104.9,436.0L97.6,436.0L97.4,444.2L58.2,444.2L58.0,427.8L58.0,400.2L58.0,400.2ZM233.6,502.1L249.6,502.1L257.3,502.1L257.3,535.1L241.6,535.1L233.6,535.1L233.6,502.1L233.6,502.1ZM366.9,535.2L396.1,535.2L398.6,542.2L397.9,546.7L396.8,551.4L397.2,557.2L399.6,560.2L398.6,563.8L400.5,568.1L374.7,568.1L366.9,568.0L366.9,535.2L366.9,535.2ZM123.5,535.1L162.2,535.1L162.7,535.1L162.7,568.0L158.7,568.1L127.7,568.1L123.2,568.0L123.5,535.1L123.5,535.1ZM282.7,436.1L285.0,435.8L284.8,414.0L282.4,414.0L282.7,397.5L300.5,397.7L299.6,398.1L299.8,405.8L299.1,408.1L300.5,415.5L296.7,420.3L299.3,423.0L298.9,428.3L300.3,431.7L298.6,435.1L299.1,438.9L299.3,441.2L296.5,447.7L296.7,449.9L293.5,449.7L291.6,447.2L288.5,446.4L283.6,447.4L282.7,436.1L282.7,436.1ZM274.7,356.4L294.2,356.4L292.8,357.1L291.3,364.6L291.3,370.8L296.3,372.5L298.6,371.7L301.9,374.3L301.7,376.9L307.1,383.8L306.8,387.9L303.3,391.7L303.6,394.1L300.5,397.7L282.7,397.5L282.7,386.7L282.4,372.8L274.7,372.7L274.7,356.4L274.7,356.4ZM202.4,535.1L233.6,535.1L241.6,535.1L241.6,568.2L220.4,568.2L202.4,568.1L202.4,535.1L202.4,535.1ZM194.1,495.5L199.5,497.9L204.5,501.6L211.0,503.4L215.5,506.0L218.3,504.6L216.9,499.6L217.6,497.9L233.6,497.9L233.6,502.1L233.6,535.1L202.4,535.1L194.4,535.1L194.4,510.4L194.1,495.5L194.1,495.5ZM167.4,477.3L177.7,477.3L223.0,477.3L220.9,486.0L222.8,488.0L221.1,491.5L216.9,496.2L217.6,497.9L216.9,499.6L218.3,504.6L215.5,506.0L211.0,503.4L204.5,501.6L199.5,497.9L194.1,495.5L191.6,494.7L188.3,489.1L184.3,486.0L174.9,483.2L173.0,480.0L167.4,477.3L167.4,477.3ZM71.1,353.6L103.5,353.6L103.5,370.1L104.2,370.1L104.2,386.6L80.0,386.6L71.8,386.6L71.8,370.1L71.1,370.1L71.1,353.6L71.1,353.6ZM231.7,307.7L255.7,307.4L255.7,316.2L255.7,332.6L250.0,332.5L250.3,356.0L250.5,372.7L234.3,372.6L233.8,347.7L233.6,332.4L230.8,332.4L230.8,316.0L230.8,307.7L231.7,307.7L231.7,307.7ZM280.5,535.1L280.8,535.1L304.3,535.0L304.3,536.5L320.0,536.4L320.0,568.1L313.2,568.1L282.2,568.2L280.5,568.2L280.5,535.1L280.5,535.1ZM70.2,328.8L70.2,320.5L102.8,320.6L102.8,337.1L103.5,337.1L103.5,353.6L71.1,353.6L71.1,337.0L70.2,337.0L70.2,328.8L70.2,328.8ZM141.1,196.6L174.7,196.9L175.4,238.1L175.4,254.5L166.9,254.5L142.5,254.4L142.5,237.9L142.0,237.9L142.0,221.4L142.0,205.0L141.1,205.0L141.1,196.6L141.1,196.6ZM33.1,370.1L71.1,370.1L71.8,370.1L71.8,386.6L80.0,386.6L79.8,403.0L81.0,408.9L76.3,407.5L73.0,404.8L69.7,404.6L69.0,402.3L58.0,400.2L56.8,394.7L53.5,390.1L47.2,387.0L42.9,386.7L39.6,382.2L37.5,376.2L33.1,370.1L33.1,370.1ZM142.3,262.7L142.5,254.4L166.9,254.5L167.6,293.4L170.7,295.8L143.0,295.8L143.0,271.0L142.3,262.7L142.3,262.7ZM85.2,411.3L136.9,411.3L136.9,436.1L121.4,436.1L121.4,449.2L118.5,447.5L120.4,445.9L112.9,439.9L109.1,434.9L106.6,434.9L104.9,431.8L100.5,430.5L99.0,426.9L89.0,416.5L85.2,411.3L85.2,411.3ZM333.4,477.5L335.3,479.1L343.7,482.0L351.0,485.7L354.3,489.0L354.3,493.3L356.1,494.6L356.4,498.7L358.5,502.3L344.2,502.3L344.2,510.5L328.4,510.5L328.4,502.2L313.2,502.1L313.2,485.7L321.2,485.7L321.2,477.4L333.4,477.5L333.4,477.5ZM190.4,74.4L193.4,73.3L201.2,74.6L203.8,79.3L218.1,79.9L229.4,81.6L231.2,87.0L230.5,91.0L231.9,91.9L241.8,91.8L243.0,90.6L248.1,90.7L253.5,89.1L253.3,85.2L261.1,81.4L270.2,80.0L272.3,81.7L278.2,81.3L277.5,134.5L278.0,134.5L278.7,151.2L233.1,150.5L233.1,155.5L191.1,155.5L190.4,106.0L190.4,74.4L190.4,74.4ZM31.9,188.5L83.3,188.5L83.3,221.4L74.9,221.5L33.3,221.6L33.1,213.3L32.4,208.1L33.1,204.0L31.2,196.6L31.9,188.5L31.9,188.5ZM74.9,221.5L83.3,221.4L116.9,221.5L142.0,221.4L142.0,237.9L142.5,237.9L142.5,254.4L142.3,262.7L124.6,262.9L76.3,262.6L76.3,238.0L74.9,238.0L74.9,221.5L74.9,221.5ZM281.2,475.9L281.2,471.7L286.9,472.5L289.2,471.6L289.2,469.1L297.4,469.1L297.4,460.9L301.4,460.9L301.4,452.9L308.7,460.0L308.5,461.9L311.8,463.2L313.9,466.8L320.9,467.0L327.3,468.0L328.7,469.3L329.4,472.9L333.4,477.5L321.2,477.4L321.2,485.7L313.2,485.7L313.2,502.1L305.0,502.1L281.2,502.0L281.2,475.9L281.2,475.9ZM282.4,414.0L284.8,414.0L285.0,435.8L282.7,436.1L280.5,433.4L275.4,433.4L272.1,436.3L270.7,434.4L270.2,422.3L269.0,422.4L269.0,413.9L282.4,414.0L282.4,414.0ZM58.2,444.2L97.4,444.2L97.6,436.0L104.9,436.0L104.9,431.8L106.6,434.9L109.1,434.9L112.9,439.9L120.4,445.9L118.5,447.5L121.4,449.2L124.2,450.1L129.6,454.3L129.6,469.2L114.1,469.2L113.6,460.9L81.4,460.8L58.2,460.7L58.2,444.2L58.2,444.2ZM320.0,536.4L320.0,535.1L344.2,535.2L366.9,535.2L366.9,568.0L344.2,568.0L320.0,568.1L320.0,536.4L320.0,536.4ZM201.4,398.8L201.7,396.6L206.1,395.6L207.8,397.1L213.2,390.9L215.3,385.6L221.1,389.8L223.7,389.3L227.0,393.5L229.6,393.9L234.3,397.8L246.0,398.0L249.8,402.3L246.5,405.0L242.0,405.8L242.0,410.0L238.0,412.8L235.7,417.9L234.1,418.0L233.6,427.8L217.6,427.8L201.7,427.7L201.4,398.8L201.4,398.8ZM36.4,271.0L69.2,270.9L69.2,304.0L70.4,304.0L70.2,320.5L70.2,328.8L50.0,328.8L51.2,325.3L48.6,309.9L48.3,299.4L45.3,297.2L40.6,289.2L39.4,285.2L38.5,275.5L36.4,271.0L36.4,271.0ZM80.0,386.6L104.2,386.6L136.4,386.6L136.4,403.1L136.9,411.3L85.2,411.3L81.0,408.9L79.8,403.0L80.0,386.6L80.0,386.6ZM11.5,89.3L62.2,89.2L113.6,89.8L113.6,106.2L114.3,106.2L114.3,124.6L88.7,124.6L54.9,124.4L12.6,124.5L12.9,122.5L12.9,118.7L14.5,114.4L12.6,106.8L13.4,102.5L13.1,93.8L11.7,89.4L11.5,89.3L11.5,89.3ZM280.3,315.8L280.3,291.0L330.1,291.2L330.1,315.9L330.1,323.7L327.7,324.5L326.3,329.3L320.7,328.8L318.3,333.3L315.1,332.3L313.2,335.4L307.3,337.2L302.6,341.1L297.9,353.1L294.2,356.4L274.7,356.4L274.4,332.6L280.3,332.6L280.3,315.8L280.3,315.8ZM233.6,459.9L238.3,457.1L240.2,454.7L243.4,453.5L242.5,450.6L244.6,446.4L249.8,444.3L255.2,443.5L258.9,446.1L262.2,445.5L263.2,452.6L262.9,460.8L265.8,460.8L265.5,469.0L249.6,469.0L224.4,469.1L224.9,464.9L227.7,461.7L233.6,459.9L233.6,459.9ZM115.0,139.0L138.0,139.1L135.0,146.3L136.9,152.0L140.4,153.0L140.4,171.9L141.1,196.6L141.1,205.0L142.0,205.0L142.0,221.4L116.9,221.5L116.9,188.4L116.9,171.9L115.3,171.9L115.0,147.2L115.0,139.0L115.0,139.0ZM196.0,304.5L197.0,303.3L196.7,270.9L195.8,270.9L196.0,254.3L233.1,254.6L232.9,274.9L230.8,275.3L230.8,307.0L231.7,307.7L230.8,307.7L230.8,316.0L193.9,315.9L194.6,313.7L192.5,310.7L196.0,304.5L196.0,304.5ZM262.2,445.5L267.4,443.7L270.0,441.0L272.1,436.3L275.4,433.4L280.5,433.4L282.7,436.1L283.6,447.4L288.5,446.4L291.6,447.2L293.5,449.7L296.7,449.9L301.4,452.9L301.4,460.9L297.4,460.9L297.4,469.1L289.2,469.1L289.2,471.6L286.9,472.5L281.2,471.7L281.2,475.9L265.5,475.9L265.5,469.0L265.8,460.8L262.9,460.8L263.2,452.6L262.2,445.5L262.2,445.5ZM191.1,155.5L233.1,155.5L233.1,150.5L278.7,151.2L278.4,167.5L279.8,167.5L279.4,198.4L279.6,225.5L280.3,233.3L233.1,233.0L233.1,215.7L230.8,213.6L233.4,206.9L225.8,205.6L224.2,207.6L215.7,200.5L216.7,197.1L213.2,191.4L210.8,190.2L197.0,196.4L191.3,193.6L191.1,155.5L191.1,155.5ZM166.9,254.5L175.4,254.5L175.4,238.1L174.7,196.9L191.3,196.8L191.3,193.6L197.0,196.4L210.8,190.2L213.2,191.4L216.7,197.1L215.7,200.5L224.2,207.6L225.8,205.6L233.4,206.9L230.8,213.6L233.1,215.7L233.1,233.0L233.1,254.6L196.0,254.3L195.8,270.9L196.7,270.9L197.0,303.3L196.0,304.5L190.6,299.2L188.3,299.3L183.6,302.1L177.7,299.8L175.8,297.7L171.4,297.4L170.7,295.8L167.6,293.4L166.9,254.5L166.9,254.5ZM255.7,316.2L265.3,315.6L280.3,315.8L280.3,332.6L274.4,332.6L274.7,356.4L250.3,356.0L250.0,332.5L255.7,332.6L255.7,316.2L255.7,316.2ZM208.7,372.6L234.3,372.6L250.5,372.7L250.5,386.3L250.3,402.4L249.8,402.3L246.0,398.0L234.3,397.8L229.6,393.9L227.0,393.5L223.7,389.3L221.1,389.8L215.3,385.6L209.2,378.9L208.7,372.6L208.7,372.6ZM358.5,502.3L361.3,505.1L367.7,508.4L368.4,510.8L375.9,517.7L378.2,518.3L386.0,520.5L386.9,522.1L389.5,525.0L396.1,535.2L366.9,535.2L344.2,535.2L344.2,510.5L344.2,502.3L358.5,502.3L358.5,502.3ZM103.5,353.6L143.9,353.7L143.9,370.2L144.4,370.2L144.4,386.6L136.4,386.6L104.2,386.6L104.2,370.1L103.5,370.1L103.5,353.6L103.5,353.6ZM201.7,427.7L217.6,427.8L217.9,452.6L201.9,452.5L201.9,460.8L185.9,460.9L185.9,452.6L185.7,435.9L185.7,427.7L201.7,427.7L201.7,427.7ZM132.2,46.1L143.0,46.1L143.0,9.5L149.3,12.5L155.9,10.9L162.7,15.2L164.6,18.1L167.8,34.5L169.5,36.6L173.7,57.0L172.3,62.7L173.2,67.1L176.5,70.6L183.3,74.2L190.4,74.4L190.4,106.0L139.2,106.2L139.2,89.7L130.7,89.7L130.5,73.3L147.2,73.3L146.9,53.5L143.9,56.0L137.6,57.3L133.3,55.1L131.9,52.1L132.2,46.1L132.2,46.1ZM175.8,297.7L177.7,299.8L183.6,302.1L188.3,299.3L190.6,299.2L196.0,304.5L192.5,310.7L194.6,313.7L193.9,315.9L230.8,316.0L230.8,332.4L233.6,332.4L233.8,347.7L195.3,347.7L200.7,352.2L176.3,352.2L175.8,297.7L175.8,297.7ZM33.3,221.6L74.9,221.5L74.9,238.0L76.3,238.0L76.3,262.6L76.3,270.9L69.2,270.9L36.4,271.0L35.9,270.7L35.4,267.7L36.6,262.1L35.2,253.0L36.4,251.6L37.8,242.1L36.4,243.0L33.8,238.8L34.0,224.9L33.3,221.6L33.3,221.6ZM249.8,402.3L250.3,402.4L256.1,405.7L263.4,412.1L265.8,415.9L265.3,422.4L269.0,422.4L270.2,422.3L270.7,434.4L272.1,436.3L270.0,441.0L267.4,443.7L262.2,445.5L258.9,446.1L255.2,443.5L249.8,444.3L249.6,436.0L233.6,436.1L233.6,427.8L234.1,418.0L235.7,417.9L238.0,412.8L242.0,410.0L242.0,405.8L246.5,405.0L249.8,402.3L249.8,402.3ZM250.5,386.3L277.7,386.4L282.7,386.7L282.7,397.5L282.4,414.0L269.0,413.9L269.0,422.4L265.3,422.4L265.8,415.9L263.4,412.1L256.1,405.7L250.3,402.4L250.5,386.3L250.5,386.3ZM50.7,336.9L50.0,328.8L70.2,328.8L70.2,337.0L71.1,337.0L71.1,353.6L71.1,370.1L33.1,370.1L31.4,368.2L32.6,364.5L38.5,359.4L43.6,356.2L46.5,351.1L49.7,347.4L50.7,336.9L50.7,336.9ZM143.9,353.7L143.9,352.3L176.3,352.2L200.7,352.2L205.4,362.3L205.2,366.9L208.7,372.6L209.2,378.9L215.3,385.6L213.2,390.9L207.8,397.1L206.1,395.6L201.7,396.6L201.4,398.8L193.4,398.9L193.4,394.7L168.5,394.7L168.5,386.5L144.4,386.6L144.4,370.2L143.9,370.2L143.9,353.7L143.9,353.7Z","lit":[{"name":"Nobles","d":"M84.3,535.0L122.8,535.1L123.5,535.1L123.2,568.0L96.7,568.1L84.3,568.1L84.3,535.0L84.3,535.0Z"},{"name":"Ramsey","d":"M282.4,414.0L284.8,414.0L285.0,435.8L282.7,436.1L280.5,433.4L275.4,433.4L272.1,436.3L270.7,434.4L270.2,422.3L269.0,422.4L269.0,413.9L282.4,414.0L282.4,414.0Z"},{"name":"Fillmore","d":"M320.0,536.4L320.0,535.1L344.2,535.2L366.9,535.2L366.9,568.0L344.2,568.0L320.0,568.1L320.0,536.4L320.0,536.4Z"},{"name":"Hennepin","d":"M249.8,402.3L250.3,402.4L256.1,405.7L263.4,412.1L265.8,415.9L265.3,422.4L269.0,422.4L270.2,422.3L270.7,434.4L272.1,436.3L270.0,441.0L267.4,443.7L262.2,445.5L258.9,446.1L255.2,443.5L249.8,444.3L249.6,436.0L233.6,436.1L233.6,427.8L234.1,418.0L235.7,417.9L238.0,412.8L242.0,410.0L242.0,405.8L246.5,405.0L249.8,402.3L249.8,402.3Z"}],"pins":[{"id":"peterson","x":360.2,"y":540.9},{"id":"worthington","x":114.0,"y":556.7}],"metro_box":{"x":270.8,"y":430.5}},"metro":{"w":520,"h":606,"counties":"M521.8,439.2L568.4,432.9L563.8,11.5L517.1,11.5L521.8,-307.4L876.4,-304.2L857.7,-296.3L862.4,-146.4L848.4,-102.2L876.4,41.5L801.7,133.0L853.1,186.7L843.7,289.3L871.7,354.0L839.1,420.3L848.4,492.9L853.1,538.7L797.1,664.9L801.7,706.0L736.4,702.8L699.1,653.9L638.4,639.7L540.4,658.6L521.8,439.2L521.8,439.2ZM517.1,11.5L563.8,11.5L568.4,432.9L521.8,439.2L479.8,387.1L377.1,387.1L311.8,444.0L283.8,406.1L274.5,172.5L251.1,174.1L251.1,9.9L517.1,11.5L517.1,11.5ZM-453.4,900.1L-360.1,846.5L-322.8,799.1L-257.5,775.4L-276.1,720.2L-234.1,638.1L-131.5,598.6L-24.2,582.9L50.5,633.4L115.8,622.3L134.5,758.1L129.8,917.5L185.8,917.5L181.1,1076.9L-136.2,1076.9L-635.4,1078.5L-626.1,996.4L-570.1,934.8L-453.4,900.1L-453.4,900.1ZM115.8,622.3L218.5,586.0L269.8,533.9L311.8,444.0L377.1,387.1L479.8,387.1L521.8,439.2L540.4,658.6L638.4,639.7L699.1,653.9L736.4,702.8L801.7,706.0L895.1,764.4L895.1,919.1L815.7,919.1L815.7,1078.5L652.4,1078.5L652.4,1125.8L605.8,1144.8L493.8,1129.0L493.8,1209.5L181.1,1209.5L181.1,1076.9L185.8,917.5L129.8,917.5L134.5,758.1L115.8,622.3L115.8,622.3ZM-131.5,-214.2L-122.2,-212.7L-5.5,-149.5L139.1,-24.8L185.8,49.4L176.5,174.1L251.1,174.1L274.5,172.5L283.8,406.1L311.8,444.0L269.8,533.9L218.5,586.0L115.8,622.3L50.5,633.4L-24.2,582.9L-131.5,598.6L-136.2,437.7L-453.4,439.2L-453.4,279.8L-444.1,88.8L-411.5,87.2L-364.8,-12.2L-285.5,-65.9L-285.5,-146.4L-196.8,-162.1L-131.5,-214.2L-131.5,-214.2ZM-117.5,-523.6L423.8,-522.0L521.8,-517.3L521.8,-307.4L517.1,11.5L251.1,9.9L251.1,174.1L176.5,174.1L185.8,49.4L139.1,-24.8L-5.5,-149.5L-122.2,-212.7L-117.5,-523.6L-117.5,-523.6Z","pins":[{"id":"stpaul","x":429.0,"y":323.9},{"id":"newbrighton","x":309.4,"y":80.8},{"id":"clinton","x":189.1,"y":391.7},{"id":"redtop","x":171.6,"y":486.0},{"id":"firstfree","x":204.7,"y":405.1},{"id":"bloomington","x":158.2,"y":531.4}],"labels":[{"t":"HENNEPIN","x":39,"y":202},{"t":"RAMSEY","x":442,"y":73},{"t":"DAKOTA","x":390,"y":551}]},"places":[{"id":"peterson","name":"Peterson","years":"1923–1941","text":"Born here, grew up here, graduated from Peterson High School in 1941. Her parents, her brother Stanley and all four of her grandparents are buried in the Peterson area."},{"id":"worthington","name":"Worthington","years":"1925 · 1950","text":"Norb's hometown, in the southwest corner of the state. The twins, Keith and Mark, were born here on January 22, 1950."},{"id":"stpaul","name":"St. Paul","years":"1941–1948","metro":true,"text":"The family moved here in 1941 when Sven went to work at the ordnance plant. Margaret and Norb married in St. Paul on August 28, 1948."},{"id":"newbrighton","name":"Ordnance plant","years":"1941","metro":true,"text":"The Twin Cities Ordnance Plant near New Brighton, where her father worked as a machinist making cartridges during the war."},{"id":"clinton","name":"4832 Clinton Ave.","years":"1953–1970s","metro":true,"text":"The family home in south Minneapolis. Kristen was born in 1951 and Bruce in 1956. Sven lived here with them after 1959."},{"id":"redtop","name":"Red Top trailer camp","years":"1950","metro":true,"text":"Trailer #3, 7421 Lyndale Avenue South, Richfield: Norb, Margaret and the three-month-old twins in April 1950."},{"id":"firstfree","name":"First Free","years":"home church","metro":true,"text":"First Evangelical Free Church, 5150 Chicago Avenue South. Margaret and Norb's home church."},{"id":"bloomington","name":"Bloomington","years":"by 2007–2026","metro":true,"text":"Home in their later years. Margaret died in Bloomington on September 6, 2026."}]}};
+const $ = (s, r = document) => r.querySelector(s);
+const el = (tag, attrs = {}, ...kids) => {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v; else if (k === "text") n.textContent = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v);
+  }
+  for (const k of kids.flat()) if (k != null) n.append(k);
+  return n;
+};
+const BIRTH = 1923 + (306 / 365);  // 2 November 1923
+const ageAt = y => Math.max(0, Math.floor(y - BIRTH + 0.0001));
+
+/* ---------- lightbox ---------- */
+const lb = $("#lb"); let lbList = [], lbIdx = 0;
+function openLightbox(list, idx) {
+  lbList = list; lbIdx = idx; renderLightbox();
+  if (!lb.open) lb.showModal();
+}
+function renderLightbox() {
+  const it = lbList[lbIdx];
+  const body = $("#lb-body"), foot = $("#lb-foot");
+  body.className = "dlg-body" + (it.wide ? " wide" : "");
+  body.replaceChildren(el("img", { src: it.src, alt: it.alt || "", width: it.w, height: it.h }));
+  $("#lb-t").textContent = it.label || "";
+  const lines = [el("b", { text: it.title })];
+  if (it.meta) lines.push(el("span", { text: it.meta }));
+  if (it.credit) lines.push(el("span", { text: it.credit }));
+  foot.replaceChildren(...lines);
+  const multi = lbList.length > 1;
+  $("#lb-prev").hidden = !multi; $("#lb-next").hidden = !multi;
+  if (it.wide) body.scrollLeft = 0;
+}
+$("#lb-close").onclick = () => lb.close();
+$("#lb-prev").onclick = () => { lbIdx = (lbIdx - 1 + lbList.length) % lbList.length; renderLightbox(); };
+$("#lb-next").onclick = () => { lbIdx = (lbIdx + 1) % lbList.length; renderLightbox(); };
+lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+lb.addEventListener("keydown", e => {
+  if (lbList.length > 1 && e.key === "ArrowLeft") $("#lb-prev").click();
+  if (lbList.length > 1 && e.key === "ArrowRight") $("#lb-next").click();
+});
+
+/* ---------- photos ---------- */
+const photos = DATA.photos || [];
+const photoItem = p => ({ src: p.src, w: p.w, h: p.h, alt: p.alt, label: p.date, title: p.caption,
+  meta: [p.occasion, p.place].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i).join(" · ") + (p.people && p.people.length ? (p.occasion || p.place ? " · " : "") + p.people.join(", ") : "") });
+const niceDate = d => {
+  const ym = /^(\d{4})-(\d{2})$/.exec(d || "");
+  if (ym) return new Date(+ym[1], +ym[2] - 1, 1).toLocaleDateString("en-US", { year: "numeric", month: "long" });
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(d || "");
+  if (!m) return d || "";
+  return new Date(+m[1], +m[2] - 1, +m[3]).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+};
+function photoFigure(p, i) {
+  const fig = el("figure", { class: "photo" });
+  const img = el("img", { src: p.src, alt: p.alt, width: p.w, height: p.h, loading: "lazy", decoding: "async" });
+  const frame = el("div", { class: p.cutout ? "mat cutout" : "mat" }, el("button", { type: "button", "aria-label": "Enlarge: " + p.caption, onclick: () => openLightbox(photos.map(photoItem), i) }, img));
+  fig.append(frame, el("figcaption", { text: [p.caption, niceDate(p.date)].filter(Boolean).join(" · ") }));
+  return fig;
+}
+const hero = photos.find(p => /senior-portrait/.test(p.src)) || photos[0];
+if (hero) {
+  const hi = $("#hero-img"); hi.src = hero.src; hi.alt = hero.alt; hi.width = hero.w; hi.height = hero.h;
+  $("#hero-btn").onclick = () => openLightbox(photos.map(photoItem), photos.indexOf(hero));
+}
+const paired = new Set();
+document.querySelectorAll("[data-pair]").forEach(slot => {
+  const items = slot.dataset.pair.split("|").map(stem => photos.findIndex(p => p.src.includes("/" + stem + "."))).filter(i => i >= 0);
+  if (items.length < 2) { slot.remove(); return; }
+  const ch = slot.closest("[data-chapter]")?.dataset.chapter;
+  items.forEach(i => { if (photos[i].chapter === ch) paired.add(photos[i]); });  // still shown in its own chapter otherwise
+  const figs = items.map(i => {
+    const p = photos[i];
+    return el("figure", { class: "photo" },
+      el("div", { class: "mat" }, el("button", { type: "button", "aria-label": "Enlarge: " + p.caption, onclick: () => openLightbox(photos.map(photoItem), i) },
+        el("img", { src: p.src, alt: p.alt, width: p.w, height: p.h, loading: "lazy", decoding: "async" }))),
+      el("figcaption", { text: niceDate(p.date) }));
+  });
+  slot.replaceWith(el("figure", { class: "pair" }, el("div", { class: "pair-row" }, ...figs), el("figcaption", { class: "pair-cap", text: slot.dataset.pairCaption || "" })));
+});
+document.querySelectorAll("[data-photo]").forEach(slot => {
+  const i = photos.findIndex(p => p.src.includes("/" + slot.dataset.photo + "."));
+  if (i < 0) { slot.remove(); return; }
+  paired.add(photos[i]);
+  slot.replaceWith(photoFigure(photos[i], i));
+});
+document.querySelectorAll("[data-photos]").forEach(slot => {
+  const list = photos.map((p, i) => [p, i]).filter(([p]) => p.chapter === slot.dataset.photos && p !== hero && !paired.has(p));
+  if (!list.length) { slot.remove(); return; }
+  slot.style.cssText = "display:grid;gap:28px";
+  list.forEach(([p, i]) => slot.append(photoFigure(p, i)));
+});
+$("#photo-count").textContent = photos.length + " photographs so far, oldest first. More are on the way.";
+const gal = $("#gallery");
+photos.forEach((p, i) => {
+  gal.append(el("figure", {},
+    el("button", { type: "button", "aria-label": "Enlarge: " + p.caption, onclick: () => openLightbox(photos.map(photoItem), i) },
+      el("div", { class: p.cutout ? "mat cutout" : "mat" }, el("img", { src: p.src, alt: p.alt, width: p.w, height: p.h, loading: "lazy", decoding: "async" }))),
+    el("figcaption", {}, el("b", { text: p.caption }), el("span", { text: niceDate(p.date) + (p.place ? " · " + p.place : "") }))));
+});
+
+/* ---------- record slips ---------- */
+const recs = Object.fromEntries((DATA.records || []).map(r => [r.id, r]));
+const recItem = r => ({ src: r.img, w: r.w, h: r.h, wide: !!r.wide, alt: r.title, label: r.sid + " · " + r.date, title: r.title, credit: r.credit });
+document.querySelectorAll("[data-record]").forEach(slot => {
+  const r = recs[slot.dataset.record]; if (!r) { slot.remove(); return; }
+  const tall = r.h > r.w * 1.1;
+  slot.replaceWith(el("figure", { class: "slip" },
+    el("div", { class: "slip-head" }, el("span", { text: "From the records · " + r.title }), el("span", { class: "d", text: r.date })),
+    el("button", { class: "slip-img" + (tall ? " tall" : r.wide && r.w / r.h > 6 ? " wide" : ""), type: "button", "aria-label": "Enlarge the original: " + r.title, onclick: () => openLightbox([recItem(r)], 0) },
+      el("img", { src: r.img, alt: "Original: " + r.title, width: r.w, height: r.h, loading: "lazy", decoding: "async" })),
+    el("pre", { class: "slip-lines", text: (r.lines || []).join("\n") }),
+    el("figcaption", { class: "slip-foot", text: r.credit + " · " + r.sid })));
+});
+
+/* ---------- historic photographs (Fillmore County Historical Society) ---------- */
+const hist = Object.fromEntries((DATA.historic || []).map(h => [h.id, h]));
+document.querySelectorAll("[data-historic]").forEach(slot => {
+  const h = hist[slot.dataset.historic]; if (!h) { slot.remove(); return; }
+  const item = { src: h.img, w: h.w, h: h.h, alt: h.title, label: "Peterson", title: h.title, meta: h.caption, credit: h.credit };
+  slot.replaceWith(el("figure", { class: "photo historic" },
+    el("div", { class: "mat" }, el("button", { type: "button", "aria-label": "Enlarge: " + h.title, onclick: () => openLightbox([item], 0) },
+      el("img", { src: h.img, alt: h.title, width: h.w, height: h.h, loading: "lazy", decoding: "async" }))),
+    el("figcaption", {}, el("span", { class: "hc", text: h.caption }), el("span", { class: "cr", text: h.credit }))));
+});
+
+/* ---------- directory ribbon ---------- */
+const dirs = DATA.directory || [];
+const tabs = $("#dir-years"), panel = $("#dir-panel");
+function showDir(i) {
+  tabs.querySelectorAll("button").forEach((b, j) => { b.setAttribute("aria-selected", String(j === i)); b.tabIndex = j === i ? 0 : -1; });
+  const d = dirs[i];
+  panel.replaceChildren(
+    el("button", { class: "slip-img", type: "button", "aria-label": "Enlarge the " + d.year + " directory page", onclick: () => openLightbox(dirs.map(x => ({ src: x.img, w: x.w, h: x.h, alt: "Minneapolis directory " + x.year, label: "S0037 · " + x.year, title: "Minneapolis City Directory, " + x.year, meta: "Jensen " + x.text, credit: "Hennepin County Library" })), i) },
+      el("img", { src: d.img, alt: "Directory entry, " + d.year, width: d.w, height: d.h })),
+    el("div", { class: "dir-text", text: "Jensen " + d.text }),
+    el("div", { class: "dir-gloss", text: d.job ? `${d.year}: Norb working as ${d.job}. Home at 4832 Clinton Avenue.` : `${d.year}: home at 4832 Clinton Avenue; no occupation printed.` }));
+}
+dirs.forEach((d, i) => tabs.append(el("button", { type: "button", role: "tab", id: "dir-" + i, "aria-controls": "dir-panel", onclick: () => showDir(i) , text: d.year })));
+tabs.addEventListener("keydown", e => {
+  const bs = [...tabs.children], i = bs.indexOf(document.activeElement);
+  if (i < 0) return;
+  const j = e.key === "ArrowRight" ? Math.min(i + 1, bs.length - 1) : e.key === "ArrowLeft" ? Math.max(i - 1, 0) : null;
+  if (j != null) { e.preventDefault(); showDir(j); bs[j].focus(); }
+});
+if (dirs.length) showDir(0);
+
+/* ---------- family tree ---------- */
+const FAMILY = [
+  { gen: "Grandparents", people: [
+    { id: "fredE", name: "Frederick E. Thompson", yrs: "1851–1923", text: "Born in Winnebago County, Wisconsin. Married Helga Nayes in 1876 and farmed 80 acres in section 13 of Arendahl Township, northwest of Peterson. He died in January 1923, the year Margaret was born. Buried at Arendahl.", rec: "plat1896" },
+    { id: "helga", name: "Helga “Hattie” Nayes Thompson", yrs: "1850–1931", text: "Sven’s mother. She lived until 1931, when Margaret was seven. Buried at Arendahl." },
+    { id: "ole", name: "Ole Gullickson", yrs: "1864–1903", text: "Agnes’s father. He died in January 1903, when she was still a girl. His gravestone at West Grace Cemetery in Peterson is carved in Norwegian: “Født Dec. 4 1864 / Død Jan. 2 1903.”" },
+    { id: "clara", name: "Clara Jackson Gullickson", yrs: "1868–1911", text: "Agnes’s mother, daughter of Torger Andrew Jackson. When she died in 1911, Agnes, 22, took charge of the household for her sister Cora, 15, her brother Adolph, 11, and Grandfather Jackson, who owned the house." },
+  ]},
+  { gen: "Parents", people: [
+    { id: "sven", name: "Sven Augustin Thompson", yrs: "1883–1965", text: "Homesteader, chicken farmer, machinist, motorcycle and car dealer, gravel man, plumber, war-plant machinist. Born on a farm three miles northwest of Peterson; studied at Red Wing Seminary and St. Olaf. Wrote To My Grandchildren in 1963 while living with Margaret and Norb. Buried at East Grace, Peterson." },
+    { id: "agnes", name: "Agnes Beatta Gullickson Thompson", yrs: "1889–1959", text: "Born in Rushford; grew up in Peterson. Piano teacher and church organist; a charter member of the Peterson Garden Club. Sven wrote that she studied music at St. Olaf. Married Sven on her 26th birthday, March 30, 1915. Died suddenly in St. Paul on February 7, 1959." },
+    { id: "cora", name: "Cora M. Gullickson", yrs: "1896–1988", aunt: true, text: "Agnes’s younger sister, and Margaret’s aunt. She lived with the Thompsons in Peterson and worked at the post office, assistant postmaster by 1940." },
+    { id: "fredH", name: "Frederick H. Thompson", yrs: "b. 1895", aunt: true, text: "Sven’s younger brother. A sergeant, first class, with the 126th Aero Squadron at Kelly Field in the First World War, and afterward in charge of repairs at Sven’s auto dealership.", rec: "fred" },
+    { id: "adolph", name: "Adolph G. Gullickson", yrs: "b. 1900", aunt: true, text: "Agnes’s younger brother, eleven when their mother died. Served in the First World War. Buried at Money Creek, Minnesota.", rec: "adolph" },
+  ]},
+  { gen: "Brothers & sisters", people: [
+    { id: "paul", name: "Paul Thompson", yrs: "1916–1993", text: "The oldest, born in Peterson in 1916. In his third year of college in 1940." },
+    { id: "dorothy", name: "Dorothy Thompson Anderson", yrs: "1919–2007", text: "Married Harvey Anderson in 1946 and lived in Litchfield. Her obituary in 2007 named “a sister: Margaret (and Norbert) Jensen of Bloomington.”" },
+    { id: "lynn", name: "Lynn Thompson", yrs: "b. 1921", text: "Twenty and looking for work in 1940. He died before 2007." },
+    { id: "margaret", name: "Margaret", yrs: "1923–2026", her: true },
+    { id: "stanley", name: "Stanley Thompson", yrs: "1926–1931", text: "The youngest. He died in Peterson on June 18, 1931, aged five, when Margaret was seven. His marker at East Grace Cemetery reads “Stanley 1926–1931.”" },
+  ]},
+  { gen: "Married", people: [
+    { id: "mn", name: "Margaret & Norb", yrs: "married August 28, 1948", her: true, text: "Married in St. Paul. Seventy-eight years together. Norbert Vernon Jensen was born June 1, 1925, in Worthington, the son of Raymond and Gertrude (Fischer) Jensen, and served in naval aviation in the Second World War." },
+  ]},
+  { gen: "Children", people: [
+    { id: "mark", name: "Mark Jensen", yrs: "b. 1950", text: "A twin, born January 22, 1950, in Worthington." },
+    { id: "keith", name: "Keith Jensen", yrs: "b. 1950", text: "A twin, born January 22, 1950, in Worthington." },
+    { id: "kristen", name: "Kristen Jensen", yrs: "b. 1951", text: "Born September 4, 1951, in Minneapolis." },
+    { id: "bruce", name: "Bruce Jensen", yrs: "b. 1956", text: "The youngest, born October 26, 1956, in Minneapolis." },
+  ]},
+];
+const herText = "Born in Peterson on November 2, 1923. Graduated from Peterson High School in 1941, moved to the Twin Cities with her family, married Norb in 1948, raised four children on Clinton Avenue, and made First Free her church home. She died in Bloomington on September 6, 2026, aged 102.";
+const gens = $("#gens"), card = $("#person-card");
+function showPerson(p, btn) {
+  gens.querySelectorAll(".person").forEach(b => b.setAttribute("aria-pressed", String(b === btn)));
+  const kids = [el("p", { class: "yrs num", text: p.yrs }), el("h3", { text: p.id === "margaret" ? "Margaret Thompson Jensen" : p.name })];
+  const r = p.rec && recs[p.rec];
+  if (r && r.h > r.w) kids.push(el("button", { type: "button", style: "all:unset;cursor:zoom-in;justify-self:start", "aria-label": "Enlarge: " + r.title, onclick: () => openLightbox([recItem(r)], 0) }, el("img", { src: r.img, alt: r.title, width: r.w, height: r.h })));
+  kids.push(el("p", { text: p.text || herText }));
+  if (r && r.h <= r.w) kids.push(el("button", { type: "button", class: "letter-open", style: "justify-self:start", text: "See the plat map", onclick: () => openLightbox([recItem(r)], 0) }));
+  card.replaceChildren(...kids);
+}
+FAMILY.forEach(g => {
+  const row = el("div", { class: "people" });
+  g.people.forEach(p => {
+    const b = el("button", { type: "button", class: "person" + (p.her ? " her" : ""), "aria-pressed": "false", onclick: () => showPerson(p, b) },
+      el("b", { text: p.name }), el("small", { class: "num", text: (p.aunt ? "aunt/uncle · " : "") + p.yrs }));
+    row.append(b);
+    if (p.id === "margaret") setTimeout(() => showPerson(p, b));
+  });
+  gens.append(el("div", { class: "gen" }, el("div", { class: "gen-label", text: g.gen }), row));
+});
+
+/* ---------- maps ---------- */
+const SVGNS = "http://www.w3.org/2000/svg";
+const sv = (tag, attrs = {}, text) => { const n = document.createElementNS(SVGNS, tag); for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v); if (text) n.textContent = text; return n; };
+const places = Object.fromEntries(((DATA.map || {}).places || []).map(p => [p.id, p]));
+const placeCard = $("#place-card");
+function showPlace(id) {
+  const p = places[id]; if (!p) return;
+  document.querySelectorAll(".pin").forEach(g => g.classList.toggle("on", g.dataset.id === id));
+  placeCard.replaceChildren(el("p", { class: "yrs num", text: p.years }), el("h3", { text: p.name }), el("p", { text: p.text }));
+}
+function drawMap(svg, m, isState) {
+  svg.setAttribute("viewBox", `-24 -14 ${m.w + 48} ${m.h + 28}`);
+  if (isState) {
+    svg.append(sv("path", { d: m.outline, class: "m-state" }));
+    m.lit.forEach(c => svg.append(sv("path", { d: c.d, class: "m-lit" })));
+    svg.append(sv("path", { d: m.counties, class: "m-counties" }));
+    svg.append(sv("path", { d: m.outline, fill: "none", stroke: "currentColor", "stroke-width": 1.2, style: "color:var(--ink-3)" }));
+    const b = m.metro_box; svg.append(sv("rect", { x: b.x - 16, y: b.y - 14, width: 30, height: 28, class: "m-box" }));
+    svg.append(sv("text", { x: b.x + 20, y: b.y + 4, class: "m-label" }, "TWIN CITIES"));
+  } else {
+    svg.append(sv("rect", { x: 0, y: 0, width: m.w, height: m.h, fill: "var(--mat)" }));
+    svg.append(sv("path", { d: m.counties, class: "m-counties", style: "stroke:var(--ink-3);stroke-width:.8" }));
+    m.labels.forEach(l => svg.append(sv("text", { x: l.x, y: l.y, class: "m-label", "text-anchor": "middle" }, l.t)));
+  }
+  m.pins.forEach(pn => {
+    const p = places[pn.id];
+    const right = pn.x < m.w * 0.7;
+    const g = sv("g", { class: "pin", tabindex: 0, role: "button", "aria-label": `${p.name}, ${p.years}`, "data-id": pn.id, transform: `translate(${pn.x},${pn.y})` });
+    g.append(sv("circle", { r: 13, class: "halo" }), sv("circle", { r: 5.5, class: "dot" }),
+      sv("text", { x: right ? 10 : -10, y: 4.5, "text-anchor": right ? "start" : "end" }, p.name));
+    g.addEventListener("click", () => showPlace(pn.id));
+    g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); showPlace(pn.id); } });
+    svg.append(g);
+  });
+}
+if (DATA.map) { drawMap($("#map-state"), DATA.map.state, true); drawMap($("#map-metro"), DATA.map.metro, false); showPlace("peterson"); }
+
+/* ---------- letter ---------- */
+const memo = $("#memoir");
+(DATA.memoir || []).forEach(t => memo.append(el("p", { class: /^Sven A\. Thompson/.test(t) ? "sig" : "", text: t })));
+const md = $("#memoir-dlg");
+$("#letter-open").onclick = () => md.showModal();
+$("#memoir-close").onclick = () => md.close();
+md.addEventListener("click", e => { if (e.target === md) md.close(); });
+
+/* ---------- year rail ---------- */
+const chapters = DATA.chapters || [];
+const Y0 = 1923, Y1 = 2026;
+const scale = $("#scale");
+function layoutRail() {
+  const H = scale.clientHeight; if (!H) return;
+  scale.replaceChildren();
+  const yPos = y => (y - Y0) / (Y1 - Y0) * H;
+  for (let y = 1930; y <= 2020; y += 10) scale.append(el("div", { class: "tick", style: `top:${yPos(y)}px` }, el("b", { text: String(y) })));
+  chapters.forEach(c => scale.append(el("div", { class: "seg", "data-ch": c.id, style: `top:${yPos(c.start) + 2}px;height:${Math.max(4, yPos(c.end) - yPos(c.start) - 4)}px` }, el("a", { href: "#" + c.id, tabindex: -1, "aria-hidden": "true" }))));
+  scale.append(el("div", { class: "marker", id: "marker" }));
+  update();
+}
+const secs = chapters.map(c => document.getElementById(c.id)).filter(Boolean);
+function update() {
+  const vh = window.innerHeight, probe = vh * 0.38;
+  let cur = 0;
+  for (let i = 0; i < secs.length; i++) if (secs[i].getBoundingClientRect().top <= probe) cur = i;
+  const c = chapters[cur];
+  let year = c.start;
+  secs[cur].querySelectorAll("[data-year]").forEach(n => { if (n.getBoundingClientRect().top <= probe) year = +n.dataset.year; });
+  const y = year;
+  const ageTxt = y < 1923 ? "Before Margaret" : y === 1923 ? "Born November 2" : y >= 2026 ? "Age 102" : "Age " + ageAt(y + 0.5);
+  $("#rail-year").textContent = y; $("#rail-age").textContent = ageTxt; $("#rail-ch").textContent = c.title;
+  $("#mini-year").textContent = y; $("#mini-age").textContent = ageTxt; $("#mini-ch").textContent = c.title;
+  const H = scale.clientHeight, m = $("#marker");
+  if (m && H) m.style.top = ((Math.max(Y0, year) - Y0) / (Y1 - Y0) * H) + "px";
+  scale.querySelectorAll(".seg").forEach(s => s.classList.toggle("on", s.dataset.ch === c.id));
+}
+let ticking = false;
+window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { update(); ticking = false; }); } }, { passive: true });
+window.addEventListener("resize", layoutRail);
+layoutRail();
+</script>
