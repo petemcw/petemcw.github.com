@@ -10,7 +10,7 @@ const posts = defineCollection({
     date: z.coerce.date(),
     categories: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
-    // Hidden posts are left off the home page but still built, tagged, and syndicated.
+    // Hidden posts are left off the home page but still built and tagged.
     hidden: z.boolean().default(false),
     // Loads Video.js for posts that embed <GoogleDrivePlayer />.
     videos: z.boolean().default(false),

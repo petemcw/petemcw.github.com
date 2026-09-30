@@ -56,7 +56,6 @@ const shareImage = new URL('/images/favicons/favicon-194x194.png', Astro.site);
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap" />
     {videos && <link rel="stylesheet" href="https://vjs.zencdn.net/7.4.1/video-js.css" />}
     {showCanonical && <link rel="canonical" href={canonical} />}
-    <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/feed.xml" />
   </head>
   <body>
     <Header showPostsLink={showPostsLink} />
