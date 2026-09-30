@@ -1,0 +1,16 @@
+---
+interface Props {
+  id: string;
+  title: string;
+}
+
+const { id, title } = Astro.props;
+---
+
+<div class="embed-container">
+  <h3>{title}</h3>
+  <hr />
+  <video id={id} class="video-js" autoplay loop muted playsinline preload="auto" width="690" height="690" data-setup="{}">
+    <source src={`https://drive.google.com/uc?export=download&id=${id}`} type="video/mp4" />
+  </video>
+</div>

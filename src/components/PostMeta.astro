@@ -1,0 +1,23 @@
+---
+import { displayDate } from '../site';
+
+interface Props {
+  date: Date;
+  tags: string[];
+  class: string;
+}
+
+const { date, tags, class: className } = Astro.props;
+---
+
+<time datetime={date.toISOString()} class={`${className}--date date`}>{displayDate(date)}</time>
+{
+  tags.length > 0 && (
+    <>
+      &#8226;{' '}
+      <span class="post-meta__tags">
+        on {tags.map((tag) => <><a href={`/tags/#${tag}`}>{tag}</a> </>)}
+      </span>
+    </>
+  )
+}

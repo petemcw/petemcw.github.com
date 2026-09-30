@@ -1,29 +1,34 @@
 # petemcw.github.io
 
-It's my website.
+It's my website, built with [Astro](https://astro.build/) and deployed to GitHub Pages by GitHub Actions.
 
 ## Run it locally
+
+Requires Node 22.12 or newer (see `.nvmrc`).
 
 ```bash
 git clone git@github.com:petemcw/petemcw.github.com.git
 cd petemcw.github.com/
-bundle install
-bundle exec jekyll serve --watch
+npm install
+npm run dev
 ```
+
+## Write a post
+
+Add a Markdown file to `src/content/posts/` named `YYYY-MM-DD-slug.md`. It's published at `/YYYY/slug/`. Front matter fields are defined in `src/content.config.ts`. Recipes add a `recipe:` block. Use `.mdx` when a post needs components such as `<GoogleDrivePlayer />`.
+
+Posts with `hidden: true` are built and linked from tags, categories, and the feed, but left off the home page.
 
 ## Publish a new version
 
-```bash
-bundle exec rake publish
-```
+Push to the `source` branch. The [deploy workflow](.github/workflows/deploy.yml) builds the site and publishes it to GitHub Pages. Pull requests against `source` get a build check without deploying.
 
-## Upgrade Jekyll
+Static files that skip the build (images, fonts, `CNAME`, `robots.txt`, and the self-contained `/memorial/` page) live in `public/`.
 
-The current version of Jekyll can be found on [RubyGems](https://rubygems.org/gems/jekyll).
+## Upgrade Astro
 
 ```bash
-bundle exec jekyll --version
-bundle update jekyll
+npx @astrojs/upgrade
 ```
 
 ---
