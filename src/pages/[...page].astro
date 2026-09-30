@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostMeta from '../components/PostMeta.astro';
+import { SITE, getPosts, postExcerpt, postUrl, stripHtml, type Post } from '../site';
+
+// Page 1 is the home page; later pages live at /page/N/ like jekyll-paginate-v2.
+export async function getStaticPaths() {
+  const visible = (await getPosts()).filter((post) => !post.data.hidden);
+  const totalPages = Math.max(1, Math.ceil(visible.length / SITE.postsPerPage));
+  return Array.from({ length: totalPages }, (_, i) => ({
+    params: { page: i === 0 ? undefined : `page/${i + 1}` },
+    props: {
+      posts: visible.slice(i * SITE.postsPerPage, (i + 1) * SITE.postsPerPage),
+      current: i + 1,
+      totalPages,
+    },
+  }));
+}
+
+const { posts, current, totalPages } = Astro.props as { posts: Post[]; current: number; totalPages: number };
+const pageHref = (n: number) => (n === 1 ? '/#posts' : `/page/${n}/`);
+---
+
+<BaseLayout robots="noindex" showPostsLink={posts.length > 0}>
+  <div class="main-post-list">
+    {
+      posts.length > 0 ? (
+        <>
+          <ol class="post-list">
+            {posts.map((post) => (
+              <li>
+                <h2 class="post-list__post-title post-title">
+                  <a href={postUrl(post)} title={post.data.title}>{post.data.title}</a>
+                </h2>
+                <p class="excerpt">{stripHtml(postExcerpt(post))}&hellip;</p>
+                <div class="post-list__meta">
+                  <PostMeta date={post.data.date} tags={post.data.tags} class="post-list__meta" />
+                </div>
+                <hr class="post-list__divider" />
+              </li>
+            ))}
+          </ol>
+
+          <hr class="post-list__divider" />
+
+          {totalPages > 1 && (
+            <nav class="pagination" role="navigation">
+              {current > 1 && (
+                <a rel="prev" class="posts newer btn small" href={pageHref(current - 1)} title="Previous Page">
+                  ← Newer Posts
+                </a>
+              )}
+              <span class="pagination__page-number">Page {current} of {totalPages}</span>
+              {current < totalPages && (
+                <a rel="next" class="posts older btn small" href={pageHref(current + 1)}>
+                  Older Posts →
+                </a>
+              )}
+            </nav>
+          )}
+        </>
+      ) : (
+        <h2>Sorry, Nothing is Published</h2>
+      )
+    }
+  </div>
+</BaseLayout>

@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TaxonomyIndex from '../components/TaxonomyIndex.astro';
+import { getPosts, groupPosts } from '../site';
+
+const groups = groupPosts(await getPosts(), (post) => post.data.categories);
+---
+
+<BaseLayout title="Categories" robots="noindex">
+  <TaxonomyIndex heading="Categories" className="categories" groups={groups} />
+</BaseLayout>

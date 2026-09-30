@@ -1,0 +1,71 @@
+---
+import '../styles/main.scss';
+import Header from '../components/Header.astro';
+import { SITE } from '../site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  robots?: string;
+  videos?: boolean;
+  showPostsLink?: boolean;
+}
+
+const { title, description, robots, videos = false, showPostsLink = false } = Astro.props;
+const pageTitle = title || SITE.title;
+const pageDescription = description || SITE.description;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const shareImage = new URL('/images/favicons/favicon-194x194.png', Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {robots && <meta name="robots" content={robots} />}
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="author" content={SITE.author.name} />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    {SITE.author.twitter && <meta name="twitter:creator" content={SITE.author.twitter} />}
+    <meta name="twitter:image" content={shareImage} />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={shareImage} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194" />
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/images/favicons/manifest.json" />
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap" />
+    {videos && <link rel="stylesheet" href="https://vjs.zencdn.net/7.4.1/video-js.css" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/feed.xml" />
+  </head>
+  <body>
+    <Header showPostsLink={showPostsLink} />
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <slot />
+      </div>
+      <footer class="footer">
+        <span class="footer__copyright">&copy; {new Date().getFullYear()} {SITE.author.name}. All rights reserved.</span>
+      </footer>
+    </div>
+    {videos && <script is:inline src="https://vjs.zencdn.net/7.4.1/video.js"></script>}
+  </body>
+</html>

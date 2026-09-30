@@ -1,0 +1,108 @@
+---
+import { SITE } from '../site';
+
+interface Props {
+  showPostsLink: boolean;
+}
+
+const { showPostsLink } = Astro.props;
+const { author } = SITE;
+const isHome = Astro.url.pathname === '/';
+
+const social = [
+  author.twitter && { href: `https://twitter.com/${author.twitter}`, title: `@${author.twitter} on Twitter`, icon: 'social-twitter', label: 'Twitter' },
+  author.facebook && { href: `https://fb.me/${author.facebook}`, title: `${author.facebook} on Facebook`, icon: 'social-facebook', label: 'Facebook' },
+  author.instagram && { href: `https://www.instagram.com/${author.instagram}`, title: `${author.instagram} on Instagram`, icon: 'social-instagram', label: 'Instagram' },
+  author.linkedin && { href: `https://www.linkedin.com/in/${author.linkedin}`, title: `${author.linkedin} on LinkedIn`, icon: 'social-linkedin', label: 'LinkedIn' },
+  author.github && { href: `https://www.github.com/${author.github}`, title: `${author.github} on GitHub`, icon: 'social-github', label: 'GitHub' },
+  author.email && { href: `mailto:${author.email}`, title: `Email ${author.email}`, icon: 'mail', label: 'Email' },
+  { href: '/feed.xml', title: 'Subscribe', icon: 'rss', label: 'RSS' },
+].filter((link) => !!link);
+---
+
+<span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class:list={['panel-cover', { 'panel-cover--collapsed': !isHome }]} style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+      <div class="panel-main__content">
+        <a href="/" title={`link to home of ${SITE.title}`}>
+          <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo" />
+          <h1 class="panel-cover__title panel-title">{SITE.title}</h1>
+        </a>
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">{SITE.description}</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          {
+            showPostsLink && (
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item">
+                    <a href="/#posts" title={`link to ${SITE.title} posts`} class="blog-button">Posts</a>
+                  </li>
+                </ul>
+              </nav>
+            )
+          }
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+              {
+                social.map((link) => (
+                  <li class="navigation__item">
+                    <a href={link.href} title={link.title} target="_blank" rel="noopener">
+                      <i class={`icon icon-${link.icon}`} />
+                      <span class="label">{link.label}</span>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+<script>
+  const panel = document.querySelector<HTMLElement>('.panel-cover')!;
+  const content = document.querySelector<HTMLElement>('.content-wrapper')!;
+  const navigation = document.querySelector<HTMLElement>('.navigation-wrapper')!;
+  const menuIcon = document.querySelector<HTMLElement>('.btn-mobile-menu__icon')!;
+
+  const toggleMenuIcon = () => {
+    for (const name of ['icon-list', 'icon-x-circle', 'animated', 'fadeIn']) menuIcon.classList.toggle(name);
+  };
+
+  if (window.location.hash === '#posts') panel.classList.add('panel-cover--collapsed');
+
+  // Slide the cover panel aside to reveal the post list.
+  document.querySelector('a.blog-button')?.addEventListener('click', () => {
+    if (panel.classList.contains('panel-cover--collapsed')) return;
+    const currentWidth = panel.offsetWidth;
+    if (currentWidth < 960) {
+      panel.classList.add('panel-cover--collapsed');
+      content.classList.add('animated', 'slideInRight');
+    } else {
+      const collapsed = { maxWidth: '530px', width: '40%' };
+      panel.animate([{ maxWidth: `${currentWidth}px`, width: `${currentWidth}px` }, collapsed], { duration: 400, easing: 'ease-in-out' });
+      Object.assign(panel.style, collapsed);
+    }
+  });
+
+  document.querySelector('.btn-mobile-menu')?.addEventListener('click', () => {
+    for (const name of ['visible', 'animated', 'bounceInDown']) navigation.classList.toggle(name);
+    toggleMenuIcon();
+  });
+
+  navigation.querySelector('.blog-button')?.addEventListener('click', () => {
+    navigation.classList.toggle('visible');
+    toggleMenuIcon();
+  });
+</script>

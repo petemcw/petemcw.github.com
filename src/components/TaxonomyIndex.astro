@@ -1,0 +1,31 @@
+---
+import { postUrl, type Post } from '../site';
+
+interface Props {
+  heading: string;
+  className: string;
+  groups: Map<string, Post[]>;
+}
+
+const { heading, className, groups } = Astro.props;
+---
+
+<h2>{heading}:</h2>
+<div class={className}>
+  {[...groups.keys()].map((name) => <a href={`#${name}`}>{name}</a>)}
+</div>
+
+{
+  [...groups].map(([name, posts]) => (
+    <div id={name}>
+      <h3>{name}</h3>
+      <ul>
+        {posts.map((post) => (
+          <li>
+            <a href={postUrl(post)}>{post.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))
+}
