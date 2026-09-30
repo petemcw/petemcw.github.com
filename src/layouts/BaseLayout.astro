@@ -9,9 +9,11 @@ interface Props {
   robots?: string;
   videos?: boolean;
   showPostsLink?: boolean;
+  // The 404 page is served at whatever URL was missing, so it has no canonical address.
+  canonical?: boolean;
 }
 
-const { title, description, robots, videos = false, showPostsLink = false } = Astro.props;
+const { title, description, robots, videos = false, showPostsLink = false, canonical: showCanonical = true } = Astro.props;
 const pageTitle = title || SITE.title;
 const pageDescription = description || SITE.description;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -53,7 +55,7 @@ const shareImage = new URL('/images/favicons/favicon-194x194.png', Astro.site);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap" />
     {videos && <link rel="stylesheet" href="https://vjs.zencdn.net/7.4.1/video-js.css" />}
-    <link rel="canonical" href={canonical} />
+    {showCanonical && <link rel="canonical" href={canonical} />}
     <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/feed.xml" />
   </head>
   <body>
